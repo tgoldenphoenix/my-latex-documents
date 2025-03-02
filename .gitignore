@@ -2,7 +2,7 @@
 
 ## my own ignore
 *.zip
-*.png
+# *.png
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
