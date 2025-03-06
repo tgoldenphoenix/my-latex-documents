@@ -1,0 +1,39 @@
+% === basics
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{blindtext} % To generate lorem ipsum
+
+% === Insert figures
+\usepackage{graphicx}
+\graphicspath{./figures/}
+
+% === Dùng tiếng Việt
+\usepackage[vietnamese=nohyphenation]{hyphsubst} % Để nó không hiện warning
+\usepackage[vietnamese]{babel}
+
+% === Hyperlink
+\usepackage{hyperref} % must be the last package to import
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+    
+\urlstyle{same}
+
+% Multi-file LaTeX projects
+\usepackage{subfiles} % Best loaded last in the preamble
+
+% === Meta-data
+\title{Mechanics notes}
+\title{
+	{Mechanics notes}\\
+	{\large Institution Name}\\
+	%{\includegraphics{university.jpg}}
+}
+\author{An Hào}
+\date{05 March 2025}
