@@ -1,0 +1,50 @@
+\chapter{Linear Algebra}
+
+\section{Introduction}
+
+Linear Algebra (đại số tuyến tính)
+
+Vectors viết bằng square bracket $\vec{v}=\begin{bmatrix}
+a\\b\\c
+\end{bmatrix}$ hay round bracket $\vec{v}=\begin{pmatrix}
+a\\b\\c
+\end{pmatrix}$ đều được.
+
+Vectors chỉ có hướng và magnitude, không có position. Tức là có thể drag vector đi đến chỗ khác on the coordinate system nhưng vẫn không làm thay đổi vector.
+
+\section{Type of operations on vectors}
+
+A \textbf{Scalar operations} happens between a vector and a normal number such as: $\vec{v} \times x$ and $\vec{v} \div x$. According to the Oxford dictionary, "scalar" is a quantity that has size but no direction. In this case, the number $x$ is the scalar and the magnitude of the vector $\vec{v}$ is \textit{scaled} (multiply or divided) by another factor (which is $x$) but the direction of the scaled vector vẫn remain trên một đường thẳng (có thể ngược chiều nếu multiply với negative numbers).
+
+\textbf{Vectors operations} happens between two vectors. This could be either an addition or a subtraction.
+
+\textbf{Dot product} (tích vô hướng) $\vec{a} \cdot \vec{b}$ returns a real number (a scalar), không trả về vector.
+
+The \textbf{length} (or magnitude, norm, size) of a vector $\vec{a}=\begin{bmatrix}
+a_x\\
+a_y\\
+\vdots\\
+a_n
+\end{bmatrix}$ is calculated as: $$\| \vec{a} \| =\sqrt{a_x^2 + a_y^2 + \dots + a_n^2}$$
+
+This definition of vector length comes from the \textit{Pythagorean theorem}. Note that the notation of double "pipe" is different from the notation for \textit{absolute values} $|v|$.
+
+A relationship between vector length and dot product: $$\|\vec{a}\| ^2=\vec{a}\cdot\vec{a}$$
+
+To know the vector between two points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$ in \LaTeX: $$\overrightarrow{AB} = (x_2 - x_1, y_2 - y_1, z_2 - z_1)$$
+
+The \textbf{Unit Vector} (or Normalized Vector):$$\widehat{u} = \frac{\vec{v}}{\|\vec{v}\|} = 1$$
+
+Some popular unit vector include:$$
+\widehat{e_x}=\begin{bmatrix}
+1\\0\\0
+\end{bmatrix}
+\quad
+\widehat{e_y}=\begin{bmatrix}
+0\\1\\0
+\end{bmatrix}
+\quad
+\widehat{e_z}=\begin{bmatrix}
+0\\0\\1
+\end{bmatrix}
+$$
