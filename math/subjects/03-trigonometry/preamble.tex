@@ -23,7 +23,18 @@
 
 \usepackage{tikz}
 
-% === Dùng tiếng Việt
+% === Page layout settings ===
+
+% Set page margins
+\usepackage[left=1.35in, right=1.35in, top=1.0in, bottom=.9in, headsep=.2in, footskip=0.35in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% Set spacing between paragraphs
+\setlength{\parskip}{1.3mm}
+
+% === Dùng tiếng Việt ===
 \usepackage[vietnamese=nohyphenation]{hyphsubst} % Để nó không hiện warning
 \usepackage[vietnamese]{babel}
 
@@ -41,13 +52,14 @@
 \urlstyle{same}
 
 % Multi-file LaTeX projects
-\usepackage{subfiles} % Best loaded last in the preamble
+%\usepackage{subfiles} % Best loaded last in the preamble
 
 % === Meta-data
+%\title{Trigonometry notes}
 \title{
-	{Geometry notes}\\
-	{\large Hình Học}\\
+	{Trigonometry notes}\\
+	{\large Lượng Giác}\\
 	%{\includegraphics{university.jpg}}
 }
 \author{An Hào}
-\date{07 March 2025}
+\date{10 March 2025}

@@ -1,6 +1,3 @@
-% Standalone
-\RequirePackage{standalone}
-
 % === basics
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -12,18 +9,22 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 
-% ==== Insert figures (Image-related packages)
+% === Insert figures
 \usepackage{graphicx}
-\usepackage{subcaption}
-% graphics path is relative to the master.tex file
-\graphicspath{ {./figures/} {./figures/img/} }
+\graphicspath{./figures/}
 
-%Path in Windows format:
-%\graphicspath{ {c:/user/images/} }
+% === Page layout settings ===
 
-\usepackage{tikz}
+% Set page margins
+\usepackage[left=1.35in, right=1.35in, top=1.0in, bottom=.9in, headsep=.2in, footskip=0.35in]{geometry}
 
-% === Dùng tiếng Việt
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% Set spacing between paragraphs
+\setlength{\parskip}{1.3mm}
+
+% === Dùng tiếng Việt ===
 \usepackage[vietnamese=nohyphenation]{hyphsubst} % Để nó không hiện warning
 \usepackage[vietnamese]{babel}
 
@@ -44,10 +45,11 @@
 \usepackage{subfiles} % Best loaded last in the preamble
 
 % === Meta-data
+\title{Trigonometry notes}
 \title{
-	{Geometry notes}\\
-	{\large Hình Học}\\
+	{Algebra notes}\\
+	{\large Institution Name}\\
 	%{\includegraphics{university.jpg}}
 }
 \author{An Hào}
-\date{07 March 2025}
+\date{10 March 2025}
