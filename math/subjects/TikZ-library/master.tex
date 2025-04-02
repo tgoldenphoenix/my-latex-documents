@@ -1,44 +1,131 @@
-\documentclass[a4paper]{report}
-\input{./preamble.tex}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
 
-\includeonly
-{
-	sections/introduction,
-    sections/graphing,
-}
+% === Dùng tiếng Việt
+\usepackage[vietnamese=nohyphenation]{hyphsubst} % Để nó không hiện warning
+\usepackage[vietnamese]{babel}
+
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{positioning}
+
+\title{Learn Tikz}
+\author{Dr. Trefor Bazett}
+\date{March 2022}
 
 \begin{document}
 
 \maketitle
-\tableofcontents
+%\tableofcontents
 
-%\chapter*{Abstract}
-%Abstract goes here
-%
-%\chapter*{Dedication}
-%To mum and dad
-%
-%\chapter*{Declaration}
-%I declare that..
-%
-%\chapter*{Acknowledgements}
-%I want to thank...
+\section{Notes}
 
-% \subfile{sections/test_subfile}
+Nhớ semi-colon khi xài Tikz này.
 
-\include{sections/introduction}
+\section{Playgrounds}
 
-\include{sections/graphing}
+%\vspace{1in}
 
-% Cmd + T to comment
-% Cmt + U to un-comment
+\begin{figure}
+  % try deleting [->]
+	\tikz \draw[->] (0,0) -- (2,1) -- (3,2);
+	
+	\caption{Draw a line}
+\end{figure}
 
-%\begin{figure}[ht]
-%  \centering
-%  \includegraphics[width=0.5\textwidth]{./figures/example.png}
-%  \caption{An example image}
-%\end{figure}
+\begin{figure}
+	\begin{tikzpicture}
+		\draw (0,0) circle (1);
+		\draw (2,0) circle (1.5in);
+		\draw (5,0) ellipse (10pt and 20 pt);
+		
+		\draw node at (3,0) {$f(x)$};
 
-%\includegraphics[width=0.9\textwidth]{figures/test/11}
+    % The circle is attached to the west of the node (text)
+    % try anchor=east
+    \filldraw (6,0) circle (0.1cm) node[anchor=west]{Anchored Node};
+	\end{tikzpicture}
+	
+	\caption{Circles, ellipse}
+\end{figure}
+
+\begin{figure}
+	\begin{tikzpicture}
+		\draw (0,0) rectangle (5,4);
+		
+		% Try commenting this grid line
+		% By default, grid lấy unit là 1
+		\draw (0,0) grid (5,4);
+	\end{tikzpicture}
+	
+	\caption{Rectangle}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\begin{center}
+  % What inside the [] is the parameter
+	\begin{tikzpicture}[transform canvas={scale=4.0}]  % [scale=4] sẽ khác, try it!
+	
+	  \draw[blue] (0,1) arc (90:-90:0.5cm and 1cm);
+		\draw[dashed, red] (0,1) arc (90:270:0.5cm and 1cm);
+		
+		\draw (0,0) circle (1cm);
+		
+		% Vẽ 2 cái dấu chấm màu đỏ
+		\filldraw[red] (0,1) circle  (0.05); %add fill=, and draw= to have separate colours
+		\filldraw[red] (0,-1) circle (0.05);
+		
+		\shade[ball color=blue!10!white,opacity=0.20] (0,0) circle (1cm);
+		
+	\end{tikzpicture}
+	% Note: nhìn tưởng hình 3D nhưng thực chất là vẽ 2-D để tạo illusion!
+\end{center}
+\end{figure}
+
+%\newpage
+%\vspace{4in}
+
+%%Various Line Thickness
+\begin{figure}
+
+\begin{tikzpicture}
+	\draw[ultra thick] (0,3) -- (2,3);
+	\draw[very thick] (0,2.5) -- (2,2.5);
+	\draw[thick] (0,2) -- (2,2);
+	\draw[thin] (0,1.5) -- (2,1.5);
+	\draw[very thin] (0,1) -- (2,1);
+	\draw[ultra thin] (0,.5) -- (2,.5);
+	
+	\draw node at (3, 3) {Ultra Thick};
+	\draw node at (3, 2.5) {Very Thick};
+	\draw node at (3, 2) {Thick};
+	\draw node at (3, 1.5) {Thin};
+	\draw node at (3, 1) {Very Thin };
+	\draw node at (3, 0.5) {Ultra Thin};
+\end{tikzpicture}
+
+\caption{Line thickness}
+\end{figure}
+
+\begin{figure}
+
+\begin{tikzpicture}[
+	SIR/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
+]
+	
+	%Nodes
+	% (Susceptible) is the name of the node
+	\node[SIR]    (Susceptible)                              {Susceptible $S(t)$};
+	\node[SIR]    (Infectious)       [below=of Susceptible] {Infectious $I(t)$};
+	\node[SIR]    (Recovered)       [below=of Infectious] {Recovered $R(t)$};
+	
+	%Lines
+	\draw[->, very thick] (Susceptible.south)  to node[right] {$a$} (Infectious.north);
+	\draw[->, very thick] (Infectious.south)  to node[right] {$b$} (Recovered.north);
+	\draw[->, very thick] (Recovered.east) .. controls  +(right:7mm) and +(right:7mm)   .. (Susceptible.east);
+
+\end{tikzpicture}
+\end{figure}
 
 \end{document}

@@ -18,7 +18,9 @@ A \textbf{Scalar operations} happens between a vector and a normal number such a
 
 \textbf{Vectors operations} happens between two vectors. This could be either an addition or a subtraction.
 
-\textbf{Dot product} (tích vô hướng) $\vec{a} \cdot \vec{b}$ returns a real number (a scalar), không trả về vector.
+There are two ways to multiply vectors: dot product and cross product. \textbf{Dot product} (tích vô hướng) $\vec{a} \cdot \vec{b}$ returns a real number (a scalar), không trả về vector: $$\vec{a} \cdot \vec{b} = a_{x}b_{x} + a_{y}b_{y} = \| \vec{a} \| \| \vec{b} \| \cos\Theta$$
+
+Cross product (tích vector):
 
 The \textbf{length} (or magnitude, norm, size) of a vector $\vec{a}=\begin{bmatrix}
 a_x\\
@@ -33,7 +35,7 @@ A relationship between vector length and dot product: $$\|\vec{a}\| ^2=\vec{a}\c
 
 To know the vector between two points $A(x_1,y_1,z_1)$ and $B(x_2,y_2,z_2)$ in \LaTeX: $$\overrightarrow{AB} = (x_2 - x_1, y_2 - y_1, z_2 - z_1)$$
 
-The \textbf{Unit Vector} (or Normalized Vector):$$\widehat{u} = \frac{\vec{v}}{\|\vec{v}\|} = 1$$
+The \textbf{Unit Vector} (or Normalized Vector) is a vector with length of 1, $\|\widehat{v}\| = 1$. Take any arbitrary vector divided by its length, the result is a vector that points in the same direction as the original vector but that has a length of 1: $$\widehat{u} = \frac{\vec{v}}{\|\vec{v}\|}$$
 
 Some popular unit vector include:$$
 \widehat{e_x}=\begin{bmatrix}
