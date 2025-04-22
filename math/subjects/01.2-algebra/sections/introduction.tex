@@ -2,10 +2,49 @@
 
 \section{What is Algebra}
 
-\textbf{Algebra} (đại số) is a generalization of arithmetic (đại số) that introduces variables and algebraic operations other than the standard arithmetic operations, such as addition and multiplication.
+\textbf{Algebra} (đại số) is a generalization of \textbf{arithmetic} (đại số) that introduces variables and algebraic operations other than the standard arithmetic operations, such as addition and multiplication.
 
 Các dạng bài tập như:
 \begin{itemize}
   \item Giải phương trình tìm nghiệm.
   \item Item \#2
 \end{itemize}
+
+\section{Basic Algebra}
+
+Math expression (biểu thức) like \(3x + 5 + 2y\)
+
+Monomial: an expression that has a single term
+
+Sau đây là một vài tiên đề; với a, b, c là các số thực:
+
+% what the `&&` mean
+% https://tex.stackexchange.com/questions/159723/what-does-a-double-ampersand-mean-in-latex
+\begin{equation}
+    \begin{aligned}
+      &\text{(a) tính giao hoán của phép cộng: } &&a+b = b+a\\
+      &\text{(b) tính giao hoán của phép nhân: } &&ab = ba\\
+      &\text{(c) tính phân phối: } &&a(b+c) = ab + ac\\
+      &\text{(d) tính đóng (closure): } &&a + b \text{, ab là số thực}\\
+    \end{aligned}
+    \label{key}
+\end{equation}
+
+% Từ đâu có các quy tắc trong Eq.(\ref{key})?
+
+Equality (đẳng thức); Inequality (bất đẳng thức)
+
+Algebraic \href{https://en.wikipedia.org/wiki/Identity_(mathematics)}{identity} (hằng đẳng thức) luôn đúng với mọi số a, b:
+
+\begin{equation}
+  \begin{aligned}\setcounter{mysubequations}{0}
+    \mysubnumber\quad &(a+b)^{2} = a^{2}+2ab+b^{2}\\ 
+    \mysubnumber\quad &(a-b)^{2} = a^{2}-2ab+b^{2}\\ 
+    \mysubnumber\quad &(a+b)^{3} = a^{3}+3ab(a+b)+b^{3}\\ 
+    \mysubnumber\quad &(a-b)^{3} = a^{3}-3ab(a-b)-b^{3}\\ 
+    \mysubnumber\quad &a^{2}-b^{2} = (a-b)(a+b)\\ 
+    \mysubnumber\quad &a^{3}-b^{3} = (a-b)(a^{2}+ab+b^{2})\\ 
+    \mysubnumber\quad &a^{3}+b^{3} = (a+b)(a^{2}-ab+b^{2})\\ 
+  \end{aligned}
+  \label{eq:1.2}
+\end{equation}
