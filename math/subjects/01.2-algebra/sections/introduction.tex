@@ -4,33 +4,37 @@
 
 \textbf{Algebra} (đại số) is a generalization of \textbf{arithmetic} (đại số) that introduces variables and algebraic operations other than the standard arithmetic operations, such as addition and multiplication.
 
-Các dạng bài tập như:
-\begin{itemize}
-  \item Giải phương trình tìm nghiệm.
-  \item Item \#2
-\end{itemize}
-
 \section{Basic Algebra}
 
-Math expression (biểu thức) like \(3x + 5 + 2y\)
+Math expression (biểu thức) like \(3x + 5 + 2y\). \textbf{Equation} has equal sign.
 
-Monomial: an expression that has a single term
+Monomial: an expression that has a single term.
 
-Sau đây là một vài tiên đề; với a, b, c là các số thực:
+Like terms: has the same variable like: \(3x\ 5x\). You can add, subtract like terms.
+
+In the expression "\(7a\)", the number 7 is the \textbf{coefficient} (hệ số), a is the variable.
+
+\vspace{5mm}
+
+A \href{https://en.wikipedia.org/wiki/Rational_number}{rational number} (số hữu tỉ) viết dưới dạng p/q trong đó p và q là số nguyên và q khác không; p is numerator (tử số) và q là denominator (mẫu số).
+
+A \href{https://en.wikipedia.org/wiki/Real_number}{Real number} (số thực) bao gồm tất cả các số hữu tỉ, như số nguyên (5) và phân số \(\frac{2}{3}\), và tất cả các số vô tỉ, như \(\sqrt{2}, \pi\), v.v.
+
+Các nhà Toán học cũng có thói quen. Và thói quen của họ là: dùng n, m, p, q cho số nguyên, dùng x, y cho số thực và dùng z cho số phức.
+
+Sau đây là một vài tiên đề với số thực (chấp nhận với niềm tin); với a, b, c là các số thực:
 
 % what the `&&` mean
 % https://tex.stackexchange.com/questions/159723/what-does-a-double-ampersand-mean-in-latex
 \begin{equation}
     \begin{aligned}
-      &\text{(a) tính giao hoán của phép cộng: } &&a+b = b+a\\
-      &\text{(b) tính giao hoán của phép nhân: } &&ab = ba\\
-      &\text{(c) tính phân phối: } &&a(b+c) = ab + ac\\
-      &\text{(d) tính đóng (closure): } &&a + b \text{, ab là số thực}\\
+      &\text{(1) tính giao hoán của phép cộng: } &&a+b = b+a\\
+      &\text{(2) tính giao hoán của phép nhân: } &&ab = ba\\
+      &\text{(3) tính phân phối: } &&a(b+c) = ab + ac\\
+      &\text{(4) tính đóng (closure): } &&a + b \text{, ab là số thực}\\
     \end{aligned}
     \label{key}
 \end{equation}
-
-% Từ đâu có các quy tắc trong Eq.(\ref{key})?
 
 Equality (đẳng thức); Inequality (bất đẳng thức)
 
@@ -46,5 +50,70 @@ Algebraic \href{https://en.wikipedia.org/wiki/Identity_(mathematics)}{identity} 
     \mysubnumber\quad &a^{3}-b^{3} = (a-b)(a^{2}+ab+b^{2})\\ 
     \mysubnumber\quad &a^{3}+b^{3} = (a+b)(a^{2}-ab+b^{2})\\ 
   \end{aligned}
-  \label{eq:1.2}
+  \label{eq:identity}
 \end{equation}
+
+\section{System of equations}
+
+Hệ phương trình
+
+% \begin{equation}
+%   \begin{cases}
+%     x+4y = 5\\
+%     x-4y=-3
+%   \end{cases} \iff
+%   \begin{cases}
+%     x+4y = 5\\
+%     x-4y=-3
+%   \end{cases} \iff
+% \end{equation}
+
+Solving by Addition or Subtraction
+
+% `\right.` is a "phantom" right delimiter
+\[
+  \begin{aligned}
+    &\left\{\begin{aligned} 
+      x + 4y &= 5 \\ 
+      x - 4y &= -3
+    \end{aligned}\right. \iff 
+    \left\{\begin{aligned}
+      &x +4y = 5\\ 
+      &2x = 2
+    \end{aligned}\right.
+    \\
+    \iff &\left\{\begin{aligned} 
+      x &= 1 \\ 
+      y &= 1
+    \end{aligned}\right.
+  \end{aligned}
+\]
+
+Solve systems graphically
+
+Solve with Substitution: lấy 1 phương trình dễ tìm x theo y, sau đó thay x vừa tìm vào phương trình còn lại tìm y.
+
+\section{Absolute Value Equations}
+
+\begin{align*}
+  \text{Solve } |3x-7| &= 8\\
+  3x-7&=8      &  3x-7&=-8\\
+  x&=5         &  x&=-\frac{1}{3}
+\end{align*}
+
+\vspace{5mm}
+
+\begin{align*}
+  \text{Graph } &2|x-7 | -5 \leq -1\\
+  &|x-7 | \leq 2\\
+  -2 &\leq x-7 \leq 2\\
+  5 &\leq x \leq 9
+\end{align*}
+
+\section{Fundamental Theorem of Arithmetic}
+
+All natural numbers are either prime or can be expressed as a product of prime numbers.
+
+\textbf{Prime Factorization:} The prime numbers when multiplied equal the number
+
+pf of 20: \(\)

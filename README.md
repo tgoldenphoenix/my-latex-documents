@@ -1,1 +1,3 @@
-I try to learn math once again.
+# Latex notes
+
+My math note written with LaTeX.
