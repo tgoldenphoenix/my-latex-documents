@@ -26,6 +26,8 @@ Proof: chứng minh
 
 \section{Logical Rules}
 
+Chấp nhận bằng niềm tin.
+
 \noindent \textbf{Modus Ponens}: If p is true and p implies q, then q is true.
 
 Logical notation: \(p,p \rightarrow q \therefore q\)
@@ -59,3 +61,115 @@ Example: p = \q{It is raining}, q = \q{The ground is wet}.
 \textbf{Disjunctive Syllogism}: If not p is true and p or q is true, then q is true.
 
 \textbf{Logical notation}: \(\neg p, (p \vee q) \therefore q\)
+
+\vspace{10 mm}
+
+\textbf{Addition}: If p is true, then p or q is true.
+
+\textbf{Logical notation}: \(p \therefore (p \vee q)\)
+
+\vspace{10 mm}
+
+\textbf{Simplification}: If p and q are true, then p is true.
+
+\textbf{Logical notation}: \((p \wedge q) \therefore p\)
+
+\vspace{10 mm}
+
+\textbf{Conjunction}: If p is true and q is true, then p and q are true.
+
+\textbf{Logical notation}: \(p,q \therefore (p \wedge q)\)
+
+\section{Mathematical Sets}
+
+A \href{https://en.wikipedia.org/wiki/Rational_number}{rational number} (số hữu tỉ) viết dưới dạng p/q trong đó p và q là số nguyên và q khác không; p is numerator (tử số) và q là denominator (mẫu số).
+
+A \href{https://en.wikipedia.org/wiki/Real_number}{Real number} (số thực) bao gồm tất cả các số hữu tỉ, như số nguyên (5) và phân số \(\frac{2}{3}\), và tất cả các số vô tỉ, như \(\sqrt{2}, \pi\), v.v.
+
+These are the common sets:
+
+\begin{itemize}
+  \item $\mathbb{N}$ --- The Natural Numbers (Counting Numbers): $\{1,2,3,...\}$
+  \item $\mathbb{W}$ --- The Whole Numbers: $\{0,1,2,3,...\}$
+  \item $\mathbb{Z}$ --- The Integers: $\{...,-3,-2,-1,0,1,2,3,...\}$
+  \item $\mathbb{Q}$ --- The Rational Numbers: $\left\{ \frac{p}{q} \mid p,q \in \mathbb{Z}, q \neq 0 \right\}$
+  \item $\mathbb{I}$ (commonly written as $\mathbb{R} \setminus \mathbb{Q}$) --- The Irrational Numbers: $\{x \mid x \not\in \mathbb{Q}, x \in \mathbb{R}\}$
+  \item $\mathbb{R}$ --- The Real Numbers: $\{x \mid x \text{ can be written as a decimal}\} = \{x \mid x \in \mathbb{Q} \text{ OR } x \in \mathbb{I}\}$
+  \item $\mathbb{C}$ --- The Complex (Imaginary) Numbers: $\{a+bi \mid a,b \in \mathbb{R} , i=\sqrt{-1}\}$
+\end{itemize}
+
+Some other common sets are:
+
+\begin{itemize}
+  \item $\mathbb{U}$ --- The Universal Set: \{All objects currently under discussion\}
+\end{itemize}
+
+The \textbf{Cardinality} of a set is the number of distinct elements in the set. If the cardinality of a set is a whole number, we call it a \textbf{finite set}. Otherwise, we call it an \textbf{infinite set}.
+
+\[|A| \text{ is the cardinality of set A}\]
+
+A is a \textbf{Subset} of B, $A \subseteq B$, if every element of A is also an element of B.
+
+\[(a\in A \Longrightarrow a\in B)\]
+
+The \textbf{Power Set of A}, P(A), is the set of all possible subsets of A.
+
+The \textbf{Complement}, \(A^\complement \text{ or } A^\prime\), of a set A is the set of all elements in the universal set that are NOT elements of A.
+
+\[A^\complement = \{x \mid x \in \mathbb{U} \quad \text{and} \quad x \not\in A \}\]
+
+The \textbf{Union} (hợp, hội) of two sets, $A \cup B$ is the set containing all the elements from either A or B.
+
+\[A \cup B = \{ x \mid x \in A \text{ OR } x \in B \}\]
+
+The \textbf{Intersection} (giao) of two sets, $A \cap B$, is the set of elements in both sets A and B.
+
+\[a \cap B = \{ x \mid x\in A \text{ AND } x\in B \}\]
+
+\section{Quantifiers}
+
+\q{For all, for every} is the \textbf{Universal Quantifier} $\forall$
+
+\q{There exists} is the \textbf{Existential Quantifier} $\exists$
+
+\textbf{Negations:}
+
+\[
+\begin{aligned}
+  &\neg(A \text{ or } B) = \neg A \text{ and } \neg B\\
+  &\neg(A \text{ and } B)= \neg A \text{ or } \neg B\\
+\end{aligned}
+\]
+
+
+\section{Direct Proofs}
+
+\section{Contrapositive}
+
+Trái ngược, tương phản
+
+\[p \rightarrow q \equiv \neg q \rightarrow \neg p\]
+
+\q{If and Only If} or (iff) is the \textbf{Two Way Proff}:
+
+\[p \implies q \quad q \Longrightarrow p\]
+
+\[p \iff q\]
+
+\section{Proof by Contradiction}
+
+Assume the opposite of what we want to prove, then show a contradiction.
+
+\section{Divisibility}
+
+In mathematics, \href{https://en.wikipedia.org/wiki/Parity_%28mathematics%29}{parity} (tính chẳn lẻ) is the property of an \textbf{integer} of whether it is even or odd.
+
+The above definition of parity applies ONLY to integer numbers, hence it cannot be applied to numbers with decimals or fractions like 1/2 or 4.6978. See the section "Higher mathematics" below for some extensions of the notion of parity to a larger class of "numbers" or in other more general settings. 
+
+An even number is an integer of the form
+
+\[x=2k,\ (k \in \mathbb{Z})\]
+
+The phrase \q{2 divides x} means that x is divisible by 2 — in other words, when you divide x by 2, the remainder is 0.
+
+\[2 \mid x \text{ means } \exists k \in \mathbb{Z} \text{ such that } x = 2k\]

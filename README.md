@@ -4,7 +4,7 @@ My math note written with LaTeX.
 
 ## Showcase
 
-You can read my notes on Algebra [here](https://drive.google.com/file/d/1DC7exMtfyCN-nlmYVJkU9tpjGr5t-Ktl/view?usp=sharing)
+You can read my notes on Algebra [here](https://drive.google.com/drive/folders/1LC8NXNkA09rYB85686d-iONltasQSr6B?usp=sharing)
 
 ## Screenshots
 

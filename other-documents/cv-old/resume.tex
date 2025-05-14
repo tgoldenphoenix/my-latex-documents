@@ -27,6 +27,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \usepackage[vietnamese]{babel}
+% \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -51,8 +52,11 @@
 \phone{+84~83~530~1183}
 % \fax{(000) 111 1113}
 \email{anhaophamx@gmail.com}
+% \social[github]{tgoldenphoenix}
+% \born{4 July 1776}
 \homepage{tgoldenphoenix.github.io/portfolio\_generator/}{Personal Website} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{DOB: 25/12/2002}
+% \extrainfo{Github: }
 \photo[70pt][0.4pt]{pictures/profile} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 % \quote{"A witty and playful quotation" - John Smith}
 
@@ -60,54 +64,7 @@
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-% \clearpage
-%
-% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-% \date{\today} % Letter date
-% \opening{Dear Sir or Madam,} % Opening greeting
-% \closing{Sincerely yours,} % Closing phrase
-% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-%
-% \makelettertitle % Print letter title
-%
-% \lipsum[1-2] % Dummy text
-% \lipsum[4] % Dummy text
-%
-% \makeletterclosing % Print letter signature
-%
-% \newpage
-
-%----------------------------------------------------------------------------------------
-%	CURRICULUM VITAE
-%----------------------------------------------------------------------------------------
-
-\makecvtitle % Print the CV title
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Education}
-%
-% \cventry{2023--2025}{FPT Aptech HCM}{}{}{}{}
-% \cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
-% \cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
-
-% \section{Masters Thesis}
-%
-% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
-% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
-% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+\makecvtitle
 
 \section{Education \& Work Experience}
 
@@ -169,22 +126,6 @@ Detailed achievements:
   \end{itemize}
 }
 
-% \cvitem{2011}{School of Business Postgraduate Scholarship}
-% \cvitem{2010}{Top Achiever Award -- Commerce}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Awards}
-%
-% \cvitem{2011}{School of Business Postgraduate Scholarship}
-% \cvitem{2010}{Top Achiever Award -- Commerce}
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
 \section{Skills}
 
 \cvitem{Front End}{\textsc{html5}, \textsc{CSS3(SASS)}, JavaScript, ReactJS, Material UI, TailwindCSS, Redux}
@@ -192,28 +133,11 @@ Detailed achievements:
 \cvitem{DevOps}{Linux, Git, Github, bash, Neovim, Vite, Tmux}
 % \cvitem{Other}{\LaTeX}
 
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Communication Skills}
-%
-% \cvitem{2010}{Oral Presentation at the California Business Conference}
-% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
 \section{Languages}
 
 \cvitemwithcomment{Vietnamese}{Mothertongue}{}
 \cvitemwithcomment{English}{FLuent}{Professional Working Proficiency}
 \cvitemwithcomment{Chinese}{Basic}{Basic words and phrases only}
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
 
 \section{Interests}
 
@@ -222,7 +146,5 @@ Detailed achievements:
 \cvlistdoubleitem{Math}{\LaTeX}
 \cvlistdoubleitem{Chinese character}{Reading fiction}
 \cvlistitem{Cycling}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

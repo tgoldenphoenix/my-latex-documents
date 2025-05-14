@@ -1,0 +1,150 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% document language
+\usepackage[vietnamese]{babel}
+% \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+\usepackage{lipsum}
+
+% personal data
+\name{Phạm}{An Hào}
+\title{Web Developer}
+\born{25 December 2002}
+\address{Tân Bình District}{Ho Chi Minh City}{}
+\phone[fixed]{083~530~1183}
+\homepage{tgoldenphoenix.github.io/portfolio\_generator/}
+\email{anhaophamx@gmail.com}
+
+% Social icons
+% \social[linkedin]{john.doe}
+\social[github]{tgoldenphoenix}
+
+% \extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/profile}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}
+
+\begin{document}
+
+\clearpage
+% ===== letter =====
+
+% recipient data
+\recipient{HR Department}{Company, Inc.\\123 somestreet\\some city}
+\date{\today}
+\opening{Dear Sir or Madam,}
+\closing{Sincerely yours,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I'm Pham An Hao, a hard-working and determined professional Web Developer. I Love building software to solve real-world problems for businesses and customers with a ``Product-minded'' mental model in mind.
+
+About me:
+
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\begin{itemize}
+  \item I am a Web Developer specialized in Frontend developing.
+  \item A Self-driven and self-taught fast learner with a constant thirst to learn new things. Extremely passsionate about Software Engineering \& Computer Science.
+  \item Love building beautiful web apps with JavaScript and React.
+  \item Have deep level understanding of ReactJS to building, maintaining complex UI application features, troubleshooting and improving Performance to gain seamless and efficient user experiences.
+  \item Proficient in setting up \textbf{build tools} such as \textbf{Vite} for complex projects.
+\end{itemize}
+
+I am certain that I can be an asset in any position requiring hard work, enthusiasm and reliability. I look forward to hearing from you shortly. The enclosed resume lists all of my relevant experience and qualifications.
+
+Thank you for your time and consideration.
+
+\makeletterclosing
+
+\newpage
+
+% ===== CURRICULUM VITAE =====
+
+\makecvtitle
+
+\section{Education \& Work Experience}
+
+\subsection{High Schooll}
+
+\cventry{2017--2020}{Student}{\href{https://www.facebook.com/thptchuyenbentre/?locale=vi_VN}{BenTre High School for Gifted Students}}{Major in Biology}{}{}
+
+\subsection{Higher Education}
+
+\cventry{2020--2022}{General Doctor Undergraduate}{\href{https://ctump.edu.vn/}{Can Tho University of Medicine and Pharmacy}}{}{}{Back in high school, my only concern was to pass the exams with good grades and follow the goal set by my parents of becoming a doctor. During the COVID-19 lockdown time, I suddenly had more time at home and began to ask myself if I really want to pursue this career for the next 6-8 years. In the end, after much contemplation and consulting with my family, classmates and teachers, I decided to take my leave of absence from school at the end of the 2\textsuperscript{nd} year.}
+
+\cventry{2022--2023}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my CV.
+\newline{}
+\newline{}
+Detailed achievements:
+\begin{itemize}
+  \item Learned programming on freeCodeCamp, \textsc{CS50}.
+  \begin{itemize}
+    \item I also stumbled upon the FOSS community and developed a deep appreciation for it. Today, I use Neovim to write both my \LaTeX math notes and other notes that use the markdown syntax.
+  \end{itemize}
+  \item Refresh my memory about Math since it was my most favourite subject in High School.
+  \begin{itemize}
+    \item I discovered \LaTeX — which, by the way, is what this \textit{curriculum vitae} is written in. I personally think it look gorgeous! I also use \LaTeX to write my math notes. If interested, you can find the source code on my Github.
+  \end{itemize}
+  \newpage
+  \item Started learning Chinese characters. It is worth mentioning that I do not specifically choose to learn a language such as Chinese Mandarin but rather focusing on acquainting myself with the many different characters.
+  \begin{itemize}
+    \item In the past, Chinese character (chữ Hán) along with "Chữ Nôm"\ was widely used in Vietnam both in official documents and literature. Nowadays, Chinese character is still being used in China, Japan, Hong Kong, Taiwan, Singapore and many other East Asia countries.
+    \item Learning Chinese characters therefore gives me a deeper appreciation regarding the East Asian culture sphere as well as open many opportunities in the future.
+    \item As of now, I can recognize around 2000 Chinese characters and be able to understand basic words and sentences in Mandarin, Cantonese, Japanese and some Vietnamese scripts of old. I still, however, have much to learn.
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2023--2025}{Student}{FPT Aptech HCM}{Ho Chi Minh City}{}{I decided to take learning web development seriously. During my two years at FPT Aptech, I found myself in a very nice environment, compared to self-study at home, with enthusiast lecturers and friendly classmates. They had taught me a lot and also gave me the motivation to keep following this path.
+% \newline{}
+% Detailed achievements:
+% \begin{itemize}
+%   \item Learned Java for back-end programming: 
+%   \item Learned important concepts such as: OOP, DI
+% \end{itemize}
+}
+
+\section{Projects}
+
+\cventry{}{Trello UI clone with ReactJS}{}{}{}{Implementing beautiful layout and the Drag-drop feature for task boards and the cards inside them. \href{https://github.com/tgoldenphoenix/trello-clone-web}{\underline{Github repo}, \href{https://youtu.be/UEWHVnhfnT0?si=EsJmOMBYn0g3UnCj}{\underline{video demo}} }
+\newline{}
+% \newline{}
+  Detailed technologies:
+  \begin{itemize}
+    \item ReactJS and Material UI for the layout
+    \item DND kit for Drag-drop boards \& cards
+    \item Redux to store Board data
+    \item ESLint, Yarn, Node Version Manager, Vite
+  \end{itemize}
+}
+
+\section{Skills}
+
+\cvitem{Front End}{\textsc{html5}, \textsc{CSS3(SASS)}, JavaScript, npm, ReactJS, Material UI, TailwindCSS, Redux}
+\cvitem{Back End}{NodeJS(Express), RESTful APIs, \textsc{SQL}(PostgreSQL)}
+\cvitem{DevOps}{Linux, Git, Github, bash, Neovim, Vite, Tmux}
+
+\section{Languages}
+
+\cvitemwithcomment{Vietnamese}{Mothertongue}{}
+\cvitemwithcomment{English}{FLuent}{Professional Working Proficiency}
+\cvitemwithcomment{Japanese}{Basic}{Basic words and phrases only}
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Math}{\LaTeX}
+\cvlistdoubleitem{Chinese character}{Reading fiction}
+\cvlistitem{Cycling}
+
+\end{document}
+

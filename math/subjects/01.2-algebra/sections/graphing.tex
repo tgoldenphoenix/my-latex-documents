@@ -1,8 +1,12 @@
 \chapter{Graphing Functions and Inequalities}
 
-\section{Introduction}
+\section{Introduction and Basic Terms}
 
 In mathematics, \href{https://en.wikipedia.org/wiki/Analytic_geometry}{analytic geometry}, also known as coordinate geometry or Cartesian geometry (hình học giải tích, hình học tọa độ), is the study of geometry using a coordinate system. This contrasts with synthetic geometry. 
+
+The \textbf{domain} is the set of all possible x-values which will make the function "work", and will output real y-values.
+
+The \textbf{range} is the resulting y-values we get after substituting all the possible x-values.
 
 \section{Linear equation}
 
@@ -67,4 +71,42 @@ The \textbf{axis of symmetry} goes through the focus, at right angles to the dir
 
 \section{Graphing Exponential Functions}
 
+An exponential function of the form \(f(x) = b^{x}, b > 0, b \neq 1\), has the following characteristics:
+
+\begin{itemize}
+  \item Horizontal asymptote (tiệm cận ngang): \(y=0\)
+  \item Domain (x-values): \((-\infty, \infty)\)
+  \item Range (result y values): \((0, \infty)\)
+  \item Increasing if \(b>1\)
+  \item Decreasing if \(0<b<1\)
+\end{itemize}
+
+\vspace{10 mm}
+
+\textbf{Q:} Why can’t the base of the exponential function be less than zero?
+
+Nên nhớ mình đang học \href{https://en.wikipedia.org/wiki/Real_analysis}{Real analysis} (giải tích thực).
+
+Now consider the function \(f(x) = (-4)^{x}\).
+
+For integer values of x, our function is well defined.
+
+The real problem arises when we extend x to the entire real number line. For example, if we let x=1/2, we have \((-4)^{\frac{1}{2}}=\sqrt{-4}=2i\). Within the framework of complex analysis, where the entire complex field is our playing ground, such a result would be perfectly acceptable. In Real Analysis, we restrict ourselves to the real number line.
+
+\section{Graphing Logarithmic Functions}
+
+Every logarithmic function is the inverse of an exponential function.
+
+For any real number $x$ and constant \(b>0, b\neq 1\), we can see the following characteristics in the graph of \(f(x)=\log_b(x)\):
+
+\begin{itemize}
+  \item one-to-one function
+  \item vertical asymptote (tiệm cận đứng): \(x=0\)
+  \item key points: x-intercept: (1,0), (b,1) and \((\frac{1}{b}, -1)\)
+  \item y-intercept: none
+  \item domain (x-values): \((0, \infty)\)
+  \item Range (result y values): \((-\infty, \infty)\)
+  \item increasing if \(b>1\)
+  \item decreasing if \(0<b<1\)
+\end{itemize}
 
