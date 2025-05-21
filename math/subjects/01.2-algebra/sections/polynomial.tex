@@ -1,0 +1,116 @@
+\chapter{Polynomials}
+
+\section{Intro to Polynomials}
+
+Polynomial = đa thức
+
+Math expression (biểu thức) like \(3x + 5 + 2y\). \textbf{Equation} has equal sign.
+
+Like \textbf{terms} (số hạng): has the same variable like: \(3x\ 5x\). You can add, subtract like terms.
+
+In the expression "\(7x\)", the number 7 is the \textbf{coefficient} (hệ số), x is the variable. Biến có thể là (x, y, z,...); hệ số (a, b, c,...).
+
+The exponents in polynomials can only be $0,1,2,3,...$ The expression $\frac{1}{x} + x^{2} + 3$ không phải là một đa thức polynomial do số hạng $1/x=x^{-1}$.
+
+A polynomial can NOT have division by a variable. So something like $2/x$ is right out.
+
+Monomial (đơn thức): an expression that has a single term.
+
+\textbf{zero/root/x-intercept}: nghiệm của equation.
+
+\textbf{Degree} (bậc) của một đơn thức (monomial) là tổng các số mũ của các biến xuất hiện trong đơn thức đó. Ví dụ, đơn thức $2xy^{3}z^{2}$ có bậc là $1+3+2=6$. Và bậc của một đa thức là bậc lớn nhất của bất kỳ đơn thức nào trong đa thức đó.
+
+Phương trình đa thức bậc $n$, nếu có nghiệm, thì tối đa chỉ có $n$ nghiệm thôi. Chứng minh thì dùng phản chứng.
+
+\section{Multiplying \& Dividing polynomials}
+
+\textbf{Long Multiplication} is a special method for multiplying larger numbers. Đây là cách \q{truyền thống} mỗi lần sẽ lùi 1 column vào trong.
+
+When the polynomials have 3 or more terms it is easier and more reliable to use a method like Long Multiplication for Numbers.
+
+When dividing complex polynomials, we can use the method of \textbf{Long Division} (chia đa thức) giống cách chia cho số có 2-3 chữ số.
+
+Trong trường hợp chia hết như khi chia $x^{2}-3x-10$ cho $x+2$ ta được kết quả $x-5$. Trong trường hợp này ta có thể viết như sau:
+
+\[
+  \begin{aligned}
+    (x-5)(x+2)&= x^{2}+2x-5x-10\\
+    &=x^{2}-3x-10
+  \end{aligned}
+\]
+
+Còn nếu trường hợp chia không hết và có phần dư (remainder) như khi chia $2x^{2}-5x-1$ cho $x-3$ ta được kết quả $2x+1$ và dư $2$. Vậy ta có kết quả cuối cùng là $2x+1+\frac{2}{x-3}$ và ta có thể viết như sau:
+
+\[
+  \frac{2x^{2}-5x-1}{x-3}=2x+1+\frac{2}{x-3}
+\]
+
+\section{Remainder Theorem and Factor Theorem}
+
+When dividing polynomials, we have:
+
+\[
+  \begin{aligned}
+    f(x)&=d(x) \cdot q(x) + r(x)\\
+    \text{Dividend} &= \text{Divisor} \cdot \text{Quotient} + \text{Remainder}
+  \end{aligned}
+\]
+
+And there is a key feature: The degree of r(x) is always less than d(x) - Divisor.
+
+Say we divide by a polynomial of \textbf{degree 1} (such as \q{$x-3$}) the remainder will have \textbf{degree 0} (in other word a constant, like \q{4}).
+
+We will use that idea in the \textbf{Remainder Theorem}.
+
+\vspace{10 mm}
+
+\href{https://www.mathsisfun.com/algebra/polynomials-remainder-factor.html}{The Remainder Theorem} (định lý phần dư da thức): When we devide a polynomial $f(x)$ by $x-c$ the remainder is $f(c)$
+
+So to find the remainder after dividing by $x-c$ we don't need to do any division, just calculate $f(c)$. We didn't need to do Long Division at all!
+
+\vspace{10 mm}
+
+\textbf{Định lý nhân tử (The Factor Theorem)} phát biểu rằng với đa thức f(x), nếu $f(c) = 0$ thì $(x - c)$ là một nhân tử (factor) của f(x). And the other way around, too:
+
+When $x-c$ is a factor of $f(x)$ then $f(c)=0$
+
+\textbf{Why is this useful?}
+
+Knowing that $x-c$ is a factor is the same as knowing that $c$ is a root (and vice versa).
+
+Ví dụ nếu ta phải giải một cubic equation, nhưng bằng cách nào đó, ta đã tìm ra 1 root. Bây giờ ta chỉ phải giải một quadratic equation thay vì cubic để tìm 2 nghiệm (possible) còn lại thôi.
+
+Để tìm nghiệm đầu tiên này ta có thể: (1) vẽ đồ thị, rồi nhìn đồ thị và guess hoặc (2) dùng định lý nghiệm hữu tỷ.
+
+\section{Linear Equation}
+
+Phương trình tuyến tính, (hay còn gọi là phương trình bậc một hay phương trình bậc nhất)
+
+\section{Quadratic equation}
+
+The word "quad" generally means 4 like in "quadruple" but Quadratics (phương trình bậc 2) don't have 4 of anything.
+
+The Latin prefix \textit{quadri-} or "quad" is used to indicate the number 4, for example, quadrilateral, quadrant, quadruple, etc. However, it \textit{also} very commonly used to denote objects involving the number 2. This is the case because \textit{quadratum} is the Latin word for square (hình vuông), and since the area of a square of side length $x$ is given by $x^2$, a polynomial equation having exponent two is known as a quadratic ("square-like") equation. By extension, a quadratic surface is a \textit{second}-order algebraic surface.
+
+By analogy, since the volume of a cube of side length $x$ is $x^3$, a polynomial equation having exponent three is called a cubic equation. An equation of degree four is then unimaginatively called a quartic equation, or sometimes (more commonly in older sources) a biquadratic equation.
+
+Quadratic functions have the parabola shape.
+
+%$ax^2+bx+c=0$
+
+lời giải (solution) = nghiệm (root)
+
+Phương trình bậc 2 có dạng: 
+
+% \ne means "not equal" to
+\begin{equation}
+  ax^{2}+bx+c=0\quad (a, b, c \in \mathbb{R}, \quad a \ne 0)
+  \label{eq:quadratic equation}
+\end{equation}
+
+Nghiệm của Eq. (\ref{eq:quadratic equation}) là:
+
+\[x_{1,2}=\frac{-b \pm \sqrt{b^{2}-4ac} }{2a},\quad (b^{2}-4ac \geq0)\]
+
+Delta $\Delta=\sqrt{b^{2}-4ac}$ được gọi là một \href{https://en.wikipedia.org/wiki/Discriminant}{discriminant} (biệt thức).
+

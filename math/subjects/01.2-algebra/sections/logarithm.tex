@@ -1,6 +1,6 @@
 \chapter{Exponentiation and Logarithm}
 
-\section{nth Root}
+\section{Square Root and nth Root}
 
 The "nth Root" used \textbf{n times} in a \textbf{multiplication} gives the original value
 
@@ -11,15 +11,50 @@ The "nth Root" used \textbf{n times} in a \textbf{multiplication} gives the orig
   \end{aligned}
 \]
 
-The symbol for square roots \q{\(\sqrt{}\)} is called the \textbf{radical symbol} with a little n to mean nth root.
+A square root of $x$ is a number r whose square is $x$. 3 squared is 9, so a square root of 9 is 3.
 
-When \(n\) is odd then \(\sqrt[n]{a^{n}}=a\)
+A square root of a number is a value that can be multiplied by itself to give the original number. It is like asking: What can we multiply by itself to get this?
 
-If n is even, thì phần trong căn phải \(\geq 0\).
+\subsection{Two Square Roots}
 
-\vspace{10 mm}
+There can be a \textbf{positive} and \textbf{negative} square root! The square root of 25 could be -5 of 5. But with the radical symbol $\sqrt{25}$, we only give the \textbf{positive (or zero) result}.
 
-Now let's look at some properties of nth root:
+Example: Solve $x^{2}=a$
+
+\[
+  \begin{aligned}
+    &\text{Answer: }x = \sqrt{a} \quad \text{and} \quad x = -\sqrt{a}\\
+    &\text{Or: } x \pm \sqrt{a}
+  \end{aligned}
+\]
+
+The two square roots is important when giải phương trình tìm nghiệm. 
+
+For example: Solve for x in $(x-3)^{2}=16$
+
+\[
+  \begin{aligned}
+    \text{Start with: } &(x-3)^{2}=16\\
+    \text{Square Roots: } &x-3= \pm \sqrt{16}\\
+    \text{Calculate } \sqrt{16} \text{: } &x-3= \pm4\\
+    \text{Add 3 to both sides: } &x=3 \pm 4\\
+    \text{Answer: } &x=7 \text{ or } -1
+  \end{aligned}
+\]
+
+Vậy đồ thị cắt trục Ox tại 2 điểm (có 2 nghiệm).
+
+\subsection{Principal Square Root}
+
+If there are two square roots, why do we say $\sqrt{25}=5$?
+
+The radical symbol means \textbf{just the principal square root}. The Principal square root is sometimes called the Positive Square Root (but it can be zero).
+
+The symbol for square roots \q{\(\sqrt{}\)} is called the \textbf{radical symbol} with a little n to mean nth root. \textbf{Radicand} là biểu thức dưới dấu căn. The entire expression is called a \textbf{Radical Expression}.
+
+\subsection{Rules of Roots}
+
+Now let's look at some properties of nth root and Square Roots:
 
 \textbf{Multiplication and Division}
 
@@ -28,6 +63,8 @@ Now let's look at some properties of nth root:
 \end{equation}
 
 (Note: if n is even then a and b must both be \(\geq 0\))
+
+\href{https://www.mathsisfun.com/algebra/square-root.html}{Why} does $\sqrt{xy}=\sqrt{x}\sqrt{y}$ ?
 
 It also works for division:
 
@@ -53,20 +90,28 @@ If \(a^{n}=b\) then \(a=\sqrt[n]{b}\).
 
 Note: When n is even then b must be \(\geq 0\).
 
-\textbf{nth Root of a-to-the-nth-Power}
+% \textbf{nth Root of a-to-the-nth-Power}
 
-\begin{tabular}{|c|c|c|}
-  \hline
-  & n is odd & n is even \\ \hline
-  $a \geq 0$ & $\sqrt[n]{a^{n}}=a$ & $\sqrt[n]{a^{n}}=a$ \\ \hline
-  $a<0$ & $\sqrt[n]{a^{n}}=a$ & $\sqrt[n]{a^{n}}=|a|$ \\ \hline
-\end{tabular}
+% \begin{tabular}{|c|c|c|}
+%   \hline
+%   & n is odd & n is even \\ \hline
+%   $a \geq 0$ & $\sqrt[n]{a^{n}}=a$ & $\sqrt[n]{a^{n}}=a$ \\ \hline
+%   $a<0$ & $\sqrt[n]{a^{n}}=a$ & $\sqrt[n]{a^{n}}=|a|$ \\ \hline
+% \end{tabular}
 
-\vspace{10 mm}
+\vspace{5 mm}
 
 \textbf{nth Root of a-to-the-mth-Power}
 
 \[\sqrt[n]{a^{m}}=a^{\frac{m}{n}}\]
+
+The numerator becomes the exponent while the denominator is the index of the root.
+
+\vspace{5 mm}
+
+\textbf{Other rules that I don't know the name of}
+
+\[\sqrt{x^{a}}= \left( \sqrt{x} \right)^{a}\]
 
 \subsection{Square Root vs Log()}
 
@@ -105,13 +150,21 @@ Here are the rules (laws) of exponents:
     \mysubnumber\quad &x^{1}=x &6^{1}=6\\ 
     \mysubnumber\quad &x^{0}=1 &7^{0}=1\\ 
     \mysubnumber\quad &x^{-1}=\frac{1}{x}\\ 
-    \mysubnumber\quad &x^{m}x^{n}=x^{m+n} &x^{2}x^{3}=x^{2+3}=x^{5}\\ 
-    \mysubnumber\quad &x^{m}/x^{n}=x^{m-n}\\ 
+    \mysubnumber\quad &x^{m} \cdot x^{n}=x^{m+n}\\ 
+    \mysubnumber\quad &\frac{x^{m}}{x^{n}}=x^{m-n}\\ 
     \mysubnumber\quad &(x^{m})^{n}=x^{mn}\\ 
     \mysubnumber\quad &(xy)^{n}=x^{n}y^{n}\\ 
   \end{aligned}
   \label{eq:exponent_rules}
 \end{equation}
+
+Mấy cái dưới này tự tui suy ra:
+
+\[
+  \begin{aligned}
+    \left( \frac{x^{a}}{x^{b}} \right)^{-1} = \frac{x^{b}}{x^{a}}
+  \end{aligned}
+\]
 
 \section{Fractional Exponents}
 
