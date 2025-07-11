@@ -1,4 +1,50 @@
-\chapter{Exponentiation and Logarithm}
+\chapter{Exponents, Roots and Logarithms}
+
+\section{Exponents, Roots and Logarithms}
+
+Exponents, Roots (such as square roots, cube roots etc) and Logarithm are all related!
+
+Let's start with $3\times 3=9$. Using Exponents, we write it as: $3^{2}=9$. When any of those values are missing, we have a question, each with a \textbf{different notation}:
+
+\begin{itemize}
+  \item $3^{2}=?$ is the exponent question \q{what is 3 squared?}: $3^{2}=9$
+  \item $?^{2}=9$ is the root question \q{what is the square root of 9?}: $\sqrt{9}=3$
+  \item $3^{?}=9$ is the logarithm question \q{what is log base 3 of 9?}: $\log_3 (9)=2$
+\end{itemize}
+
+\vspace{10 mm}
+
+Trong expression \(8^{2}\), số 8 là \textbf{base} (cơ số); số 2 là \textbf{exponent} (số mũ or power or index/indices).
+
+Bản chất của phép lũy thừa: start with \q{1} and then multiply or divide as many times as the exponent says
+
+\(5^{4}= 1 \times 5 \times 5 \times 5 \times 5=625\) => Giờ có 1, nhân 5 bốn lần sẽ ra bao nhiêu?
+
+Logarithm là phép tính nghịch đảo của phép lũy thừa (exponent).
+
+\(\log_5 625=4\) means \(625 \div 5 \div 5 \div 5 \div 5=1\) => 625 chia 5 mấy lần thì hết còn lại 1?
+
+\vspace{8 mm}
+
+\begin{equation}
+  \begin{split}
+    \text{Cho Eq: } b^{p}&=n\\
+    \text{For example: } 2^{3}&=8
+  \end{split}
+  \label{exponent_eqn}
+\end{equation}
+
+Với b là base (cơ số) và p là power. The exponent p is the logarithm of the number n.
+
+\begin{equation}
+  \begin{aligned}
+    \log_bn&=p\\
+    \log_28&=3
+  \end{aligned}
+  \label{log_eqn}
+\end{equation}
+
+A logarithm answer the question: \textbf{How many of one number multiply together to make another number?}
 
 \section{Square Root and nth Root}
 
@@ -12,16 +58,15 @@ The "nth Root" used \textbf{n times} in a \textbf{multiplication} gives the orig
   \end{aligned}
 \]
 
-A square root of $x$ is a number r whose square is $x$. 3 squared is 9, so a square root of 9 is 3.
+A square root of $x$ is a number r whose square is $x$. For example: 3 squared is 9, so a square root of 9 is 3.
 
-A square root of a number is a value that can be multiplied by itself to give the original number. It is like asking: What can we multiply by itself to get this?
+A \textbf{square root} of a number is a value that can be multiplied by itself to give the original number. It is like asking: What can we multiply by itself to get this?
 
 A \textbf{square number} or \href{https://en.wikipedia.org/wiki/Square_number}{perfect square} (số chính phương) is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 9 is a square number, since it equal $3^{2}$ and can be written as $3 \times 3$.
 
-\subsection{Two Square Roots}
+\subsection{The Two Square Roots and the Principal Square Root}
 
-There can be a \textbf{positive} and \textbf{negative} square root! The square root of 25 could be -5 of 5. But with the radical symbol $\sqrt{25}$, we only give the \textbf{positive (or zero) result}.
-
+There can be a \textbf{positive} and \textbf{negative} square root! The square root of 25 could be -5 of 5.
 Example: Solve $x^{2}=a$
 
 \[
@@ -47,11 +92,11 @@ For example: Solve for x in $(x-3)^{2}=16$
 
 Vậy đồ thị cắt trục Ox tại 2 điểm (có 2 nghiệm).
 
-\subsection{Principal Square Root}
+If there are two square roots, then why do we say $\sqrt{25}=5$?
 
-If there are two square roots, why do we say $\sqrt{25}=5$?
+The radical symbol means \textbf{just the principal square root}. The Principal square root is sometimes called the Positive Square Root (but it can be zero). When using the radical symbol $\sqrt{25}$, we only care about the \textbf{positive (or zero) result}.
 
-The radical symbol means \textbf{just the principal square root}. The Principal square root is sometimes called the Positive Square Root (but it can be zero).
+Lấy ví dụ là khi thực hiện việc lấy căn or find the square root(s) của 16 thì ta được kết quả $\pm \sqrt{16}=\pm 4$. Còn nếu chỉ xét $\sqrt{16}=4$
 
 The symbol for square roots \q{\(\sqrt{}\)} is called the \textbf{radical symbol} with a little n to mean nth root. \textbf{Radicand} là biểu thức dưới dấu căn. The entire expression is called a \textbf{Radical Expression} (biểu thức chứa căn).
 
@@ -68,6 +113,8 @@ Now let's look at some properties of nth root and Square Roots:
 (Note: if n is even then a and b must both be \(\geq 0\))
 
 \href{https://www.mathsisfun.com/algebra/square-root.html}{Why} does $\sqrt{xy}=\sqrt{x}\sqrt{y}$ ?
+
+\vspace{7 mm}
 
 It also works for division:
 
@@ -93,6 +140,8 @@ If \(a^{n}=b\) then \(a=\sqrt[n]{b}\).
 
 Note: When n is even then b must be \(\geq 0\).
 
+Example: $3^{2}=9 \rightarrow 3=\sqrt{9}$
+
 % \textbf{nth Root of a-to-the-nth-Power}
 
 % \begin{tabular}{|c|c|c|}
@@ -110,31 +159,15 @@ Note: When n is even then b must be \(\geq 0\).
 
 The numerator becomes the exponent while the denominator is the index of the root.
 
+Example: $\sqrt{a}=a^{\frac{1}{2}}$
+
 \vspace{5 mm}
 
 \textbf{Other rules that I don't know the name of}
 
 \[\sqrt{x^{a}}= \left( \sqrt{x} \right)^{a}\]
 
-\subsection{Square Root vs Log()}
-
-It might be best to answer with some examples.
-
-\begin{itemize}
-  \item The number $\log_7 23$ answers the question $7^{?} = 23$.
-  \item The number $\sqrt[7]{23}$ answers the question $?^7 = 23$.
-\end{itemize}
-
-As you can see, these are different questions.
-
-Some further points:
-
-\begin{itemize}
-  \item When we write $\log$, this is short for $\log_{10}$. So the number $\log 23$ answers the question $10^? = 23$.
-  \item When we write $\sqrt{\phantom{x}}$, this is short for $\sqrt[2]{\phantom{x}}$. So the number $\sqrt{23}$ answers the question $?^2 = 23$.
-\end{itemize}
-
-\section{Conjugate}
+\section{The Conjugate (biểu thức liên hợp)}
 
 The conjugate (2 biểu thức liên hợp) is where we change the sign in the middle of two terms. We only use it in expressions with \textbf{two terms}, called "binomials".
 
@@ -144,22 +177,13 @@ The conjugate can be very useful because when we multiply something by its conju
 
 It can help us move a square root from the bottom of a fraction (the \textit{denominator}) to the top, or vice versa, by multiplying both top and bottom of a fraction by the conjugate of the denominator.
 
-\subsection{Rationalizing the Denominator}
-
 \q{\textbf{Rationalizing the denominator}} is when we move a root (like a square root or cube root) from the bottom of a fraction to the top.
 
 For a fraction to be in its \q{simplest form}, the denominator should NOT be irrational. Fixing it (by making the denominator rational) is called \textbf{Rationalizing the Denominator}.
 
 \section{Intro to Exponentiation}
 
-Trong expression \(8^{2}\), số 8 là base (cơ số); số 2 là exponent (số mũ or power or index/indices).
-
-Bản chất của phép lũy thừa: start with \q{1} and then multiply or divide as many times as the exponent says
-
-\[5^{3}= 1 \times 5 \times 5 \times 5\]
-
-
-\section{Laws of Exponents}
+\subsection{Laws of Exponents}
 
 Here are the rules (laws) of exponents:
 
@@ -173,6 +197,7 @@ Here are the rules (laws) of exponents:
     \mysubnumber\quad &\frac{x^{m}}{x^{n}}=x^{m-n}\\ 
     \mysubnumber\quad &(x^{m})^{n}=x^{mn}\\ 
     \mysubnumber\quad &(xy)^{n}=x^{n}y^{n}\\ 
+    \mysubnumber\quad &\sqrt[n]{x^{m}}=x^{\frac{m}{n}}\\
   \end{aligned}
   \label{eq:exponent_rules}
 \end{equation}
@@ -181,17 +206,15 @@ Mấy cái dưới này tự tui suy ra:
 
 \[
   \begin{aligned}
-    \left( \frac{x^{a}}{x^{b}} \right)^{-1} = \frac{x^{b}}{x^{a}}
+    &\left( \frac{x^{a}}{x^{b}} \right)^{-1} = \frac{x^{b}}{x^{a}}\\
+    &x^{-2}=\frac{1}{x^{2}}\\
+    &x^{-n}=\frac{1}{x^{n}}
   \end{aligned}
 \]
 
-\section{Fractional Exponents}
+A \textbf{Fractional Exponents} aka \q{Radicals} or \q{Rational Exponents} like 1/n means to take the nth root: \(x^{\frac{1}{n}}=\sqrt[n]{x}\).
 
-Also called "Radicals" or "Rational Exponents".
-
-A fractional exponent like 1/n means to take the nth root: \(x^{\frac{1}{n}}=\sqrt[n]{x}\).
-
-\section{Negative Base Exponents}
+\subsection{Negative Base Exponents}
 
 If we are working with a negative number raised to a power, the base does not include the negative part unless we use parentheses.
 
@@ -206,9 +229,9 @@ In the case of \(-2^{2} = -1 \times 2^{2}\), from the \href{https://greenemath.c
 
 In the case of \((-2)^{2}\), since the negative is wrapped inside of the parentheses, both are now part of the base.
 
-\section{Negative Power Exponents}
+\subsection{Negative Power Exponents}
 
-Dividing is the inverse (opposite) of Multiplying. So a negative exponent means how many times to divide by the number.
+Dividing is the inverse (opposite) of Multiplying. So a negative exponent means how many times to divide by the number (starting with 1).
 
 \[a^{-n} = \frac{1}{a^{n}}\]
 
@@ -216,31 +239,77 @@ To change the sign (plus to minus, or minus to plus) of the exponent, use the Re
 
 \section{Intro to Logarithm}
 
-\begin{equation}
-  \begin{split}
-    \text{Cho Eq: } b^{p}&=n\\
-    \text{For example: } 2^{3}&=8
-  \end{split}
-  \label{exponent_eqn}
-\end{equation}
+The \textbf{Common Logarithms} use base 10 and is is written \textbf{without} a base, like this:
 
-Với b là base (cơ số) và p là power. The exponent p is the logarithm of the number n.
+\[\log (1000)=\log_{10} (1000)=3\]
 
-\begin{equation}
-  \begin{aligned}
-    \log_bn&=p\\
-    \log_28&=3
-  \end{aligned}
-  \label{log_eqn}
-\end{equation}
+The \textbf{Natural Logarithms} use base \q{e} (Euler's Number) which is about 2.71828. For example:
+
+\[\ln (7.389)=\log_e (7.389) \approx 2\]
+
+\subsection{Logarithms can have Decimals}
+
+Logarithms can have decimals for example: $\log_{10} (26)=1.41497\dotsc$
+
+What is $\log_{10} 300=?$
+
+\begin{align*}
+  &10 \times 10=100\\
+  &10 \times 10 \times 10=1000
+\end{align*}
+
+Oh no! We are either too low or too high. Muliplying \textbf{two} 10s is not enough, but multiplying \textbf{three} 10s is too many ... but what about multiplying by \textbf{two and a half} 10s? That is actually square root!
+
+\begin{align*}
+  &10\times 10 \times \sqrt{10}\\
+  = &10\times 10 \times 3.16\dotsc\\
+  = &316\dotsc
+\end{align*}
+
+We are close to 300, so we could say:
+
+\[log_{10} 300 \approx 2.5\]
+
+And using exponents we can write $300 \approx 10^{2.5}$
+
+We can find more values (using cube roots, fourth-roots etc) but in practice it is easier to use a calculator.
+
+\subsection{Negative Logarithms}
+
+What is $\log_8 0.125=?$
+
+Well, $1\div 8 =0.125$,
+
+So $\log_8 (0.125)=-1$
+
+Another example, $\log_5 0.008=-3$ so we have $1\div 5 \div 5 \div 5=5^{-3}$
+
+\subsection{Properties of Logarithms}
 
 Ta có:
 
-\begin{equation}
+\begin{equation*}
   \begin{aligned}\setcounter{mysubequations}{0}
-    \mysubnumber\quad &\log (1) = \log (10^{0}) = 0\\ 
-    \mysubnumber\quad &\log (a\times b) = \log a + \log b\\ 
+    \mysubnumber\quad &\log_a (1) = 0\\ 
+    \mysubnumber\quad &\log_a (m\times n) = \log_a m + \log_a n\\
+    \mysubnumber\quad & \log_a (m/n)=\log_a m - \log_a n \\
+    \text{The 3rd rule also gets us: }& \log_a (1/n)=-\log_a n \\
+    \mysubnumber\quad & \log_a (m^{r})=r(\log_a m) \\
+    & \log_a (a^{x})=x\\
+    & a^{\log_a (x)}=x \\
   \end{aligned}
   \label{eq:log_property}
+\end{equation*}
+
+One of the powerful things about Logarithms is that they can \textbf{turn multiply into add}.
+
+\subsection{Changing the Base}
+
+\begin{equation}
+  \log_a x=\frac{\log_b x}{\log_b a}
+  \label{eq:change base of log}
 \end{equation}
 
+Another useful property is:
+
+\[\log_a x=\frac{1}{\log_x a}\]

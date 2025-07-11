@@ -6,15 +6,23 @@
 \usepackage{blindtext} % To generate lorem ipsum
 
 % === AMS - American Mathematical Society
-\usepackage{amsmath}
+\usepackage{amsmath, booktabs}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{mathtools}
 
-% === Insert figures
+% === Insert figures & tikz (Image-related packages)
 \usepackage{graphicx}
-\graphicspath{./figures/}
+\usepackage{subcaption}
+% graphics path is relative to the master.tex file
+\graphicspath{ {./figures/} {./figures/img/} }
+% \graphicspath{./figures/}
+
+%Path in Windows format:
+%\graphicspath{ {c:/user/images/} }
+
+\usepackage{tikz}
 
 % === Page layout settings ===
 

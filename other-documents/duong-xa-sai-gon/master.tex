@@ -1,0 +1,20 @@
+\documentclass[a4paper]{report}
+\input{./preamble.tex}
+\input{./newcommand.tex}
+
+\includeonly
+{
+    sections/road_names,
+    sections/intersections
+}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\include{sections/road_names}
+
+\include{sections/intersections}
+
+\end{document}
