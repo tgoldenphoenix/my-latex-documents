@@ -1,0 +1,13 @@
+% \documentclass[tikz, border=5pt]{standalone}
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+  \begin{tikzpicture}
+    \draw[lightgray] (0,0) grid (5,5);
+
+    \draw[{Circle[scale=1.5]}-Stealth] (1,1) -- (4,3) node[midway, above left=2pt] {$\mathbf{c}$};
+  \end{tikzpicture}
+\end{document}
