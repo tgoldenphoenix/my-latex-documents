@@ -1,10 +1,12 @@
 # Latex notes
 
-My math note written with LaTeX.
+My Math notes written with LaTeX.
+
+I can't afford a computer with a stylus to use OneNote.
 
 ## Showcase
 
-You can read my notes on Algebra [here](https://drive.google.com/drive/folders/1LC8NXNkA09rYB85686d-iONltasQSr6B?usp=sharing)
+You can read my notes for Algebra [here](https://drive.google.com/file/d/1JEej44ZqaYazJm5MbW8nEOjz7cVb0fWq/view?usp=sharing)
 
 ## Screenshots
 
