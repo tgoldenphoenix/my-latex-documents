@@ -1,0 +1,36 @@
+% \documentclass[tikz, border=5pt]{standalone}
+\documentclass[tikz]{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+
+% can specify RGB color
+\usepackage{xcolor}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % \draw[lightgray] (-1,-2) grid (7,5);
+
+  \coordinate[label=left:$P$] (P) at (0,0);
+  \coordinate[label=above:$Q$] (Q) at (2,4);
+  \coordinate[label=right:$R$] (R) at (6,0);
+
+  \draw[thick] (P)--(Q)--(R)--cycle;
+
+  % no semi-colon
+  \tkzLabelSegment[below=2pt](P,R){$8$ cm}
+  \tkzLabelSegment[above right=2pt](Q,R){$x$ cm}
+
+  \tkzMarkAngle[mark=none, size=1.4cm](R,P,Q)
+  \tkzLabelAngle[pos=0.9](R,P,Q){$75^{\circ}$}
+
+  % \tkzMarkAngle[mark=none, size=1.4cm](R,Q,P)
+  \tkzMarkAngle[mark=none, size=1.4cm](P,Q,R)
+  \tkzLabelAngle[pos=0.9](P,Q,R){$58^{\circ}$}
+
+  \coordinate [label=right:Diagram \textbf{NOT} drawn accurately] (G) at (3, -1.5);
+
+\end{tikzpicture}
+\end{document}
