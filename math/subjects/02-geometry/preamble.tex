@@ -6,15 +6,17 @@
 \usepackage[T1]{fontenc}
 
 % === utils
-\usepackage{blindtext} % To generate lorem ipsum
+% \usepackage{blindtext} % To generate lorem ipsum
 \usepackage{lipsum}  % produce dummy text as filler
 \usepackage{color,soul} % highlight
+\usepackage[dvipsnames]{xcolor} % more color
+\usepackage{tcolorbox}
 
 % === AMS - American Mathematical Society
-\usepackage{amsmath, booktabs}
-\usepackage{amsthm}
+\usepackage{amsmath, amsfonts, amsthm, booktabs}
+% \usepackage{amsthm}
 \usepackage{amssymb}
-\usepackage{amsfonts}
+% \usepackage{amsfonts}
 \usepackage{mathtools}
 
 % must be place after AMS packages
@@ -53,13 +55,17 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
-    pdftitle={Overleaf Example},
+    pdftitle={geometry notes},
     pdfpagemode=FullScreen,
 }
-    
+
 \urlstyle{same}
+
+% fancy chapter style
+\usepackage[Glenn]{fncychap}
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
 
 % Multi-file LaTeX projects
 \usepackage{subfiles} % Best loaded last in the preamble
