@@ -244,22 +244,57 @@ Pythagorean Theorem: $a^{2}+b^{2}=c^{2}$ where a,b,c are sides of a right triang
 
 \section{Contrapositive}
 
-Trái ngược, tương phản
+\hl{Conditional Statement} (If-then statement): A statement with a hypothesis and a conclusion: If X, then Y. It can also be written as $X \rightarrow Y$.
 
-\[p \rightarrow q \equiv \neg q \rightarrow \neg p\]
+Negation is written with a squiggly line (\textasciitilde) or the symbol ($\neg$).
 
-\vspace{8 mm}
-
-Given an if-then statement, we can create three related statements:
+Given a Conditional Statement, we can create four related statements:
 
 \begin{itemize}
-  \item Statement: If p, then q
-  \item Converse: If q, then p (interchange the hypothesis and the conclusion)
-  \item Inverse: If not p, then not q (take the negation of both the hypothesis and the conclusion)
-  \item Contrapositive: If not q, then not p (interchange the hypothesis and the conclusion of the inverse statement)
+  \item Original Statement: If p, then q ($p \rightarrow q$)
+  \item \hl{Converse}: If q, then p ($q \rightarrow p$). Interchange/switched the hypothesis and the conclusion. Nhớ \q{c} là \textbf{C}huyển đổi vị trí.
+  \item \hl{Inverse}: If not p, then not q ($\neg p \rightarrow \neg q$). Take the negation of both the hypothesis and the conclusion)
+  \item \hl{Contrapositive}: If not q, then not p ($\neg q \rightarrow \neg p$). Interchange the hypothesis and the conclusion of the inverse statement)
+  \item Biconditionnal: $p \longleftrightarrow q$
 \end{itemize}
 
 If the statement is true, then the contrapositive is also logically true. If the converse is true, then the inverse is also logically true.
+
+The most useful one in the real world is the converse.
+
+\vspace{0.5cm}
+
+To make the Contrapositive statement (Trái ngược, tương phản), the hypothesis and conclusion are switched \textbf{and} negated.
+
+\[p \rightarrow q \equiv \neg q \rightarrow \neg p\]
+
+\vspace{0.5cm}
+
+\hl{Negation}: The opposite of an original statement.
+
+Example 1: Original Statement The flowers are red. New Statement The flowers are not red
+
+Example 2: Original Statement The number is not even. New Statement The number is even.
+
+\vspace{.6cm}
+
+\hl{Equivalent Statements}: Two statements that are either both true or both false.
+
+Examples:
+
+I) \colorbox{GreenYellow}{A statement and its contrapositive}.
+
+Original Statement: If a polygon is a square, then it is a quadrilateral (tứ giác).
+
+Contrapositve: If a polygon is not a quadrilateral, then it is not a Square. (also true)
+
+\vspace{.4cm}
+
+II) \colorbox{GreenYellow}{The converse and inverse}.
+
+Converse: If a Polygon is a quadrilateral, then it is a square. (false)
+
+Inverse: If a Polygon is not a square, then it is not a quadrilateral. (also false, counter-example hình thang trapezoid)
 
 \section{If and Only If}
 
@@ -268,6 +303,16 @@ If the statement is true, then the contrapositive is also logically true. If the
 \[p \implies q \quad q \Longrightarrow p\]
 
 \[p \iff q\]
+
+\hl{Biconditional Statement}: A statement that is true, as well as its converse. It can be written with \q{if and only if}.
+
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{biconditional-statement.png}
+  \caption{Biconditional Statement}
+\end{figure}
+
+Definition statements are always biconditional-statement.
 
 \section{Proof by Contradiction}
 
@@ -311,7 +356,27 @@ Let $P(n)$ be a statement for each $n \in \mathbb{N}$. If
 
 Then $P(n)$ is true for all $n \in \mathbb{N}$.
 
+\vspace{.3cm}
+
 An allegory regarding the domino effect is: (1) Knock down the first domino; (2) check that if a domino is knocked over, the next domino is also knocked over.
+
+\vspace{0.5cm}
+
+\hl{Inductive reasoning}: Drawing a conclusion based on a pattern taken from limited information.
+
+\hl{Conjecture}: A conclusion based on \textbf{inductive} reasoning. It is not proofed. A conjecture can be wrong.
+
+\vspace{.3cm}
+
+\hl{Example I}: My cat has hair. Your cat has hair. The next door neighbor's cat has hair. Therefore, all cats have hair.
+
+\hl{Example II}: It rained yesterday. It rained today. Therefore, it will rain every day of the year.
+
+\hl{Example III}: Old Faithful, a geyser at Yellow-Stone National Park, is known to erupt many times per day since its discovery in 1870. Because this has always been true, it will continue to be true.
+
+\vspace{0.3cm}
+
+\hl{Counter-example}: An example that disproves a conjecture.
 
 \section{Strong Iduction}
 
@@ -323,6 +388,28 @@ An allegory regarding the domino effect is: (1) Knock down the first domino; (2)
 \end{enumerate}
 
 Then $P(n)$ is true $\forall n\in \mathbb{N}, (r \leq n)$
+
+\section{Deductive Reasoning}
+
+\hl{Deductive Reasoning}: An argument based on definitions, postulates, theorems, and logic.
+
+\vspace{.4cm}
+
+\hl{The Law of Detachment} (Modus Ponens): If $X \rightarrow Y$ is true, and X is true, then Y must be true.
+
+Example:
+
+If I hurt my arm, then I will not be able to pitch in the game tomorrow.
+
+If it is true that an injury to my arm will prevent me from pitching in the game, and if it is also true that my arm has been, injured, then the conclusion, I will not be able to pitch in the game tomorrow, must also be true.
+
+\vspace{.5cm}
+
+\hl{The Law of Syllogism} (tam đoạn luận): If $X \rightarrow Y$ is true, and $Y \rightarrow Z$ is true, then $X \rightarrow Z$ must be true.
+
+Example: If I lost my car keys, then I will be late to the party. If I am late to the party, then the host will be angry.
+
+Therefore, if I lose my car keys, then the host of the party will be angry.
 
 \section{Introduction to Functions}
 
