@@ -1,0 +1,96 @@
+% === basics
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% === utils
+\usepackage{blindtext} % To generate lorem ipsum
+\usepackage{color,soul} % highlight
+\usepackage[dvipsnames]{xcolor} % more color
+\usepackage{tcolorbox}
+
+% === AMS - American Mathematical Society
+\usepackage{amsmath, booktabs}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+
+% === Insert figures & tikz (Image-related packages)
+\usepackage{graphicx}
+\usepackage{subcaption}
+% graphics path is relative to the master.tex file
+\graphicspath{ {./figures/} }
+% \graphicspath{./figures/}
+
+%Path in Windows format:
+%\graphicspath{ {c:/user/images/} }
+
+\usepackage{tikz}
+
+% === Page layout settings ===
+
+% Set page margins
+% \usepackage[left=1.35in, right=1.35in, top=1.0in, bottom=.9in, headsep=.2in, footskip=0.35in]{geometry}
+
+\usepackage[
+  left=20mm,
+  right=20mm,
+  top=25mm,
+  bottom=25mm,
+  headsep=10mm,
+  footskip=15mm,
+  % showframe
+]{geometry}
+
+% header
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{} % sets all head and foot elements empty.
+\renewcommand{\headrulewidth}{0pt} % lets the head ruler disappear
+
+\lhead{\leftmark}
+\rhead{\thepage}
+\fancyfoot[L]{\textbf{Phạm An Hào \copyright2025}}
+\fancyfoot[R]{\textbf{Middle School Physics}}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.2}
+
+% Set spacing between paragraphs
+\setlength{\parskip}{1.3mm}
+
+% === Dùng tiếng Việt ===
+\usepackage[vietnamese=nohyphenation]{hyphsubst} % Để nó không hiện warning
+\usepackage[vietnamese]{babel}
+
+% === Hyperlink
+\usepackage{hyperref} % must be the last package to import
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+    
+\urlstyle{same}
+
+% fancy chapter style
+\usepackage[Glenn]{fncychap}
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+
+% Multi-file LaTeX projects
+\usepackage{subfiles} % Best loaded last in the preamble
+
+% === Meta-data
+\title{Mechanics notes}
+\title{
+	{Middle School Physics}\\
+	{\large TKP}\\
+	%{\includegraphics{university.jpg}}
+}
+\author{An Hào}
+\date{12 Aug 2025}

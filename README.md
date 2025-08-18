@@ -1,12 +1,23 @@
 # Latex notes
 
-My Math notes written with LaTeX.
+My Math & Physics notes written with LaTeX.
 
 I can't afford a computer with a stylus to use OneNote.
 
-## Showcase
+## Subject covers
 
-You can read my notes for Algebra [here](https://drive.google.com/file/d/1JEej44ZqaYazJm5MbW8nEOjz7cVb0fWq/view?usp=sharing)
+You are welcome to read & download the pdf of some of my notes [here](https://drive.google.com/drive/folders/1LC8NXNkA09rYB85686d-iONltasQSr6B?usp=sharing)
+
+Math:
+
+- Intermediate Algebra (12 grade)
+- Geometry
+
+Physics:
+
+- Middle School Physics
+
+All terminologies are written in English with some having additional Vietnamese translation.
 
 ## Screenshots
 

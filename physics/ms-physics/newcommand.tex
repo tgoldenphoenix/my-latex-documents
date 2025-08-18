@@ -1,0 +1,8 @@
+\newcounter{mysubequations}
+
+\renewcommand{\themysubequations}{(\roman{mysubequations})}
+
+\newcommand{\mysubnumber}{\refstepcounter{mysubequations}\themysubequations}
+
+% \q for \quotes
+\newcommand{\q}[1]{``#1''}
