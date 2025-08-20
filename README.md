@@ -21,4 +21,10 @@ All terminologies are written in English with some having additional Vietnamese 
 
 ## Screenshots
 
+Below are some screenshots taken from my notes.
+
 ![Quardratic Equation](/screenshots/01.png "Quadratic Equation")
+
+![Screenshot 02](/screenshots/02.png "Screenshot 02")
+
+![Screenshot 03](/screenshots/03.png "Screenshot 03")
