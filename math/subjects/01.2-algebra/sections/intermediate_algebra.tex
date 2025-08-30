@@ -55,11 +55,12 @@ Bài ở dưới, khi lấy pt (a) cộng pt (c) ra $0=0$ là kết luận ngay 
 \end{figure}
 
 \section{Absolute Value Equations and Inequalities}
+% 25 Aug 2025
 
 \begin{multicols}{2}
 [
 %optional header
-  Solve these equations.
+  \textbf{Exercise}: Solve these equations. \textit{Hint}: you always need to isolate the absolute values first.
 ]
 \begin{equation*}
 \begin{split}
@@ -100,9 +101,156 @@ Bài ở dưới, khi lấy pt (a) cộng pt (c) ra $0=0$ là kết luận ngay 
 
 \vspace{0.3 cm}
 
-khong xai tcolorbox duoc, cannot insert image inside tcolorbox
+You need to memorize these theorems below. Remember $|a| \text{ always } \geq 0$
 
-Find the algebraic solutions \& the graphical solutions for the following inequalities.
+\noindent\rule{\textwidth}{0.8pt}
 
-Open circles means that x cannot be $-2$ or $2$ (in example \#35).
+\vspace{0.4 cm}
+
+\centerline{\colorbox{orange}{\Large The Absolute Value Inequality Theorems}}
+
+In the following inequalities, C is a nonnegative constant (including zero).
+
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=.6\textwidth]{int0401.png}
+  % \caption{Bài tập}
+\end{figure}
+
+\colorbox{SkyBlue}{III) If $|x|<-c$, then there are no solution.}
+
+\colorbox{Thistle}{IV) If $|x| \leq 0$, then $x=0$ only.}
+
+\colorbox{Aquamarine}{V) If $|x| \geq -c$, then x can be any real number.}
+
+\colorbox{Lavender}{VI) If $|x| > 0$, then x can be any real number except zero.}
+
+\noindent\rule{\textwidth}{0.8pt}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Excercise}: Find the algebraic solutions \& the graphical solutions for the following inequalities.
+]
+\begin{align*}
+  \circled{35}\ |x|&>2 \\
+  x<-2 &\text{ or } x>2
+\end{align*}
+
+% \begin{center} \line(1,0){200} \end{center}
+
+\begin{align*}
+  \circled{47}\ 5&\geq \frac{|-2b-3|}{7}+2\\
+  21&\geq |-2b-3| \\
+  -21&\leq -2b-3 \leq 21\\
+  9 &\geq b \geq -12
+\end{align*}
+
+\begin{align*}
+  \circled{36}\ 7 &\geq |y|\\
+  y \geq -7 &\text{ and } y \leq 7
+\end{align*}
+
+\begin{align*}
+  \circled{48}\ 5|-2+6y|-8 &> 2\\
+  |-2+6y|&>2\\
+  -2+6y>2 \text{ or }& -2+6y<-2\\
+  y>\frac{2}{3} \text{ or }& y<0
+\end{align*}
+
+\end{multicols}
+
+\section{Roots - Part I}
+% 27 Aug 2025
+
+Roots are also called \textbf{Radicals}.
+
+\textcolor{red}{{\LARGE $\star$} For all problems in this class, assume that unknowns are positive. Therefore, you do not have to use absolute value symbols when finding roots (e.g. $\sqrt{x^{2}}=|x|$).}
+
+\begin{tcolorbox}[
+  enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,
+  title=Root Rules,fonttitle=\bfseries,
+  boxed title style={size=small,colframe=red!50!black}
+]
+  \hspace{2cm}
+  \colorbox{green}{$\sqrt{ab}=\sqrt{a}\sqrt{b}$}
+  \hspace{7cm}
+  \colorbox{green}{$\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}$}
+\end{tcolorbox}
+
+\hl{Perfect Squares}: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+
+\vspace{.4cm}
+
+\textbf{Excercise}: Factoring out a Perfect Square.
+
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=.2\textwidth]{beg1401.png}
+  % \caption{Bài tập}
+\end{figure}
+
+\[\circled{36}\ \sqrt{50}=\sqrt{25 \cdot 2}=5\sqrt{2}\]
+
+Cách làm là construct a \textbf{Factor Tree} \& re-combine if you need to. This is not prime factorization but it's a similar idea.
+
+\vspace{.4cm}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Simplify these expressions.
+]
+\begin{align*}
+  \circled{1}\ \sqrt{18x^{3}y^{2}}&= \sqrt{9 \cdot 2 \cdot x^{2} \cdot x \cdot y^{2}} \\
+  &=3xy\sqrt{2x}
+\end{align*}
+
+% \begin{center} \line(1,0){200} \end{center}
+
+\begin{align*}
+  \circled{2}\ \sqrt{32x^{7}y^{3}}&=\sqrt{16\cdot 2 \cdot x^{6} \cdot x\cdot x^{2}\cdot y}\\
+  &=4x^{3}y\sqrt{2xy}
+\end{align*}
+
+\begin{align*}
+  \circled{4}\ \sqrt{16x^{10}y^{11}}=4x^{5}y^{5}\sqrt{y}
+\end{align*}
+
+\begin{align*}
+  \circled{5}\ \sqrt{20x^{5}y}=2x^{2}\sqrt{5xy}
+\end{align*}
+
+\begin{align*}
+  \circled{6}\ \sqrt{9x^{9}y^{6}}=3x^{4}y^{3}\sqrt{x}
+\end{align*}
+
+\begin{align*}
+  \circled{7}\ \sqrt{12x^{2}y^{8}}&=2xy^{4}\sqrt{3}
+\end{align*}
+
+\begin{align*}
+  \circled{8}\ \sqrt{25x^{6}y^{13}}&=\sqrt{25x^{6}y^{12}\cdot y}\\
+  &=5x^{3}y^{6}\sqrt{y}
+\end{align*}
+
+\begin{align*}
+  \circled{10}\ &-6\sqrt{4y^{4}}+10y^{2}-2\sqrt{81y^{2}}+17y\\
+  &-12y^{2}+10y^{2}-18y+17y\\
+  &-2y^{2}-y
+\end{align*}
+
+\begin{align*}
+  \text{Example XII) }\ \frac{6}{\sqrt{50}}=\frac{6}{5\sqrt{2}}&=\frac{6\sqrt{2}}{10}\\
+  &=\frac{3\sqrt{2}}{5}
+\end{align*}
+
+\begin{align*}
+  \text{Example XXI) }\ \sqrt{\frac{5}{48}}=\frac{\sqrt{5}}{4\sqrt{3}}=\frac{\sqrt{15}}{12}
+\end{align*}
+
+\end{multicols}
+
+Every even power (e.g. $x^{10}, $$x^{6}$, $x^{4}$, $x^{2}$) is a perfect square. You just divide the power by 2 when pulling it out of the square root ($\sqrt{x^{12}}=x^{12\div 2}=x^{6}$). Every odd power is NOT a perfect squarer.
 
