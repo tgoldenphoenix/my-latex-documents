@@ -258,6 +258,8 @@ Cách làm là construct a \textbf{Factor Tree} \& re-combine if you need to. Th
 
 Every even power (e.g. $x^{10}, $$x^{6}$, $x^{4}$, $x^{2}$) is a perfect square. You just divide the power by 2 when pulling it out of the square root ($\sqrt{x^{12}}=\sqrt{(x^{6})^{2}}=x^{12\div 2}=x^{6}$). Every odd power is NOT a perfect squarer.
 
+When pulling exponents out of the roots, you divide the power by the root index.
+
 \section{Roots - Part II}
 % 30 Aug 2025 - lễ quốc khánh, trời mưa quá trời
 
@@ -575,7 +577,7 @@ For the problems below, use the pattern.
 
 \begin{figure}[htb!]
   \centering
-  \includegraphics[width=.7\textwidth]{int0803.png}
+  \includegraphics[width=.8\textwidth]{int0803.png}
   \caption{Imaginary patterns}
   \label{fig:imaginary_pattern}
 \end{figure}
@@ -583,11 +585,13 @@ For the problems below, use the pattern.
 \textcolor{red}{{\LARGE $\star$} Hint}: Divide the power by four:
 
 \begin{enumerate}
-  \item \colorbox{cyan}{If the remainder\\ is zero, then the answer is 1.}
+  \item \colorbox{cyan}{If the remainder is zero, then the answer is 1.}
   \item \colorbox{green}{If the remainder is one, then the answer is $\iu$.}
   \item \colorbox{yellow}{If the remainder is two, then the answer is -1}
   \item \colorbox{magenta}{If the remainder is three, then the answer is $-\iu$.}
 \end{enumerate}
+
+\newpage
 
 \begin{multicols}{2}
 [
@@ -596,6 +600,71 @@ For the problems below, use the pattern.
 ]
 
 \begin{align*}
-  \circled{21}\ (5+2i)+(-1+3\iu)=4+5i
+  \circled{59}\ i^{26}=(i^{4})^{6}\cdot i^{2}=1^{6}\cdot(-1)=-1
+\end{align*}
+
+  \[\circled{60}\ i^{35}=-i\]
+
+  \[\circled{61}\ i^{80}=1\]
+
+  \[\circled{63}\ i^{25}=\iu\]
+\end{multicols}
+
+\vspace{.5cm}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Write each expressions in terms of $\iu$.
+]
+
+\begin{align*}
+  \circled{65}\ \sqrt{-3}=\sqrt{(-1)(3)}=\sqrt{-1}\sqrt{3}=i\sqrt{3}
+\end{align*}
+
+\begin{align*}
+  \circled{66}\ \sqrt{-81}=\sqrt{(-1)(81)}=\sqrt{-1}\sqrt{81}=9i
+\end{align*}
+
+  \[\circled{69}\ \sqrt{-5}=i\sqrt{5}\]
+
+  \[\circled{70}\ \sqrt{-49}=7i\]
+
+\begin{align*}
+  \circled{73}\ &5\sqrt{-20}+6\sqrt{-45}\\
+  &5\sqrt{(-1)(4)(5)}+6\sqrt{(-1)(9)(5)}\\
+  &5\cdot \iu \cdot 2 \cdot \sqrt{5}+6\cdot \iu \cdot 3 \cdot \sqrt{5}\\
+  &10i\sqrt{5}+18i\sqrt{5}=28i\sqrt{5}
+\end{align*}
+
+\begin{align*}
+  \circled{75}\ &8\sqrt{-27}-2\sqrt{-12}\\
+  &8\sqrt{-1(9)(3)}-2\sqrt{-1(4)(3)}\\
+  &24i\sqrt{3}-4i\sqrt{3}\\
+  &20i\sqrt{3}
+\end{align*}
+
+\begin{align*}
+  \circled{76}\ &-\sqrt{-250}+\sqrt{-40}\\
+  &-\sqrt{-1(25)(10)}+\sqrt{-1(4)(10)}\\
+  &-5i\sqrt{10}+2i\sqrt{10}\\
+  &-3i\sqrt{10}
+\end{align*}
+
+\end{multicols}
+
+If you have a ($-1$) in a square root symbol, the ($-1$) come out as an ($\iu$).
+
+\section{Solving Quadratic Equations by Completing the Square (Part I)}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Solve.
+]
+
+\begin{align*}
+  \text{Example I)}\ &-2x^{2}+3=-5\\
+  &x^{2}=4\\
 \end{align*}
 \end{multicols}
