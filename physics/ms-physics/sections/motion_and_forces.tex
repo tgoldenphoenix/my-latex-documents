@@ -2,13 +2,36 @@
 
 \section{Describing Motion}
 
+\hl{Distance} measures the length of the path travelled between two points. It doesn't include direction. \hl{Speed} and distance are scalar quantities with no direction.
+
+\hl{Position} measures the length and direction of a straight line from a reference point to an object's location. It is a vector quantity. Example: 4 meters to the left.
+
+\hl{Velocity} (vận tốc) is speed plus direction. It measures the rate that an object's position changes. It measures how fast and in what direction an object moves.
+
+% If an object begins at the reference point and travels in a straight line, then its position and distance travelled are the same amount. But if it starts away from the reference point or turns along the way, then they're different.
+
+% \hl{Displacement} only concerns about the start point and the end point. It does not care how the object move from start to end.
+
+\vspace{.5cm}
+
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-  \[\text{Average Speed}=\frac{\text{Distance}}{\text{Time}}\]
+  \begin{equation}
+  \vec{v}=\frac{\Delta\vec{x}}{\Delta t}\ (\unit{m/s})
+  \end{equation}
+
+  \begin{equation}
+    \text{(Average) Speed}=\frac{\text{Distance}}{\text{Time}}\ \unit(m/s)
+  \end{equation}
 \end{tcolorbox}
 
-If an object’s speed is changing throughout the distance measured, like a car speeding up as it gets on the highway, then this equation gives us its average speed during that time.
+If an object’s speed is changing throughout the distance measured, like a car speeding up as it gets on the highway, then equation (1.2) above gives us its average speed during that time.
 
-\vspace{.3cm}
+Example:
+
+\[\vec{v}=\frac{\si{25}{m}-\si{10}{m}}{3\ \text{ second}}=\si{5}{m/s}\]
+
+% \vspace{.3cm}
+\newpage
 
 \begin{figure}[htb!]
   \centering
@@ -20,10 +43,8 @@ A \textbf{distance-time graph} shows the amount of time an object travels on the
 
 \vspace{.5cm}
 
-\hl{Velocity} (vận tốc) is speed plus direction. It measures how fast and in what direction an object moves.
-
 % \vspace{.5cm}
-\noindent\rule{\textwidth}{0.4pt}
+% \noindent\rule{\textwidth}{0.4pt}
 
 \hl{Acceleration} measure how quickly the velocity of an object changes. Like velocity, it also has direction. Whenever an object is speeding up or slowing down, whenever its velocity changes, we say that object is accelerating.
 
@@ -40,16 +61,6 @@ Motion is a relative concept. It is relative to \textbf{reference frames}. There
 From the sun or the moon's perspective (reference frame), the ground is moving.
 
 Whether an object is at rest or in motion depends on the choice of reference frame. No one reference frame is more valid than another.
-
-\noindent\rule{\textwidth}{0.4pt}
-
-\hl{Distance} measures the length of the path travelled between two points. It doesn't include direction.
-
-\hl{Position} measures the length and direction of a straight line from a reference point to an object's location. It is a vector. Example: 4 meters to the left.
-
-If an object begins at the reference point and travels in a straight line, then its position and distance travelled are the same amount. But if it starts away from the reference point or turns along the way, then they're different.
-
-\hl{Displacement} only concerns about the start point and the end point. It does not care how the object move from start to end.
 
 \section{Forces}
 

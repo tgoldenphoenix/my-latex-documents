@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% document language
+\usepackage[vietnamese]{babel}
+% \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+\usepackage{lipsum}
+
+% personal data
+\name{Phạm}{An Hào}
+\title{Full-stack Developer}
+\born{25 December 2002}
+% \address{District 8}{Ho Chi Minh City}{}
+\address{Ward 7, Tan Binh District}{Ho Chi Minh City}{}
+\phone[fixed]{0~835~301~183}
+\homepage{anhaopham.com}
+\email{anhaophamx@gmail.com}
+
+% Social icons
+% \social[linkedin]{john.doe}
+\social[github]{tgoldenphoenix}
+% \social[instagram]{tGoldenPhoenix}
+
+% \extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/profile}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}
+
+\begin{document}
+
+% ===== CURRICULUM VITAE =====
+
+\makecvtitle
+
+\section{Education \& Work Experience}
+
+\subsection{High Schooll}
+
+\cventry{2017--2020}{Student}{\href{https://www.facebook.com/thptchuyenbentre/?locale=vi_VN}{BenTre High School for Gifted Students}}{Major in Biology}{}{}
+
+\subsection{Higher Education}
+
+\cventry{2020--2022}{General Medical Doctor Undergraduate}{\href{https://ctump.edu.vn/}{Can Tho University of Medicine and Pharmacy}}{}{}{}
+
+% \cventry{2022--2023}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my CV.}
+
+\cventry{2023--2025}{Student}{\href{https://www.facebook.com/aptech.fpt/}{at FPT Aptech HCM}}{Ho Chi Minh City}{}{}
+
+\section{Projects}
+
+\cventry{01}{MERN-stack Work Management web application}{}{}{}{A web-based, kanban-style, list-making application.\newline{} \href{https://github.com/tgoldenphoenix/trello-clone-web}{\underline{Github} }
+\newline{}
+% \newline{}
+  Detailed technologies:
+  \begin{itemize}
+    \item Front-end: ReactJS, Material UI, Redux, DND kit library, React-Toastify, React-router-dom, React-hook-form, Axios (custom interceptors)
+    \item Back-end: RESTful API built with NodeJS (Express framework), JSON Web Token-based Authorization \& Authentication, \href{https://resend.com/about}{Resend} EaaS, Cloudinary image API.
+    \item Database: mongoDB Atlas Database
+    \item Built tools \& others: Vite, ESLint, Yarn, Node Version Manager, cross-end, dotenv
+  \end{itemize}
+}
+
+\cventry{03}{E-Commerce API Spring Boot}{}{}{}{An E-Commerce API build in Spring Data JPA and 10 MySQL relational tables.\newline{} \href{https://github.com/tgoldenphoenix/ShoppingCart-SpringBoot}{\underline{Github}}
+\newline{}
+% \newline{}
+  Detailed technologies:
+  \begin{itemize}
+    \item Provide Product \& Shopping cart APIs endpoints, Transactional database operation with Spring data JPA \& mySQL
+    \item Database: mysql-8.0.36 docker image
+    % \item Other: Lombok, MapStruct
+  \end{itemize}
+}
+
+% \cventry{02}{Identity Service API}{}{}{}{An Identity Service API build with Spring Framework.\newline{} \href{https://github.com/tgoldenphoenix/identity-service-api}{\underline{Github}}
+% \newline{}
+% % \newline{}
+%   Detailed technologies:
+%   \begin{itemize}
+%     \item Spring Validation
+%     % \item Database: mysql-8.0.36 docker image
+%     \item Other: Lombok, MapStruct
+%   \end{itemize}
+% }
+
+\cventry{03}{My porfolio website}{}{}{}{A Responsive personal portfolio website built with ReactJS, Tailwind CSS.\newline{} \href{https://github.com/tgoldenphoenix/tailwind-porfolio}{\underline{Github}, \href{https://www.anhaopham.com/}{\underline{anhaopham.com}} }
+}
+
+\section{Skills}
+
+\cvitem{Front End}{\textsc{html5}, \textsc{CSS3}, JavaScript, JQuery, TypeScript, Bootstrap, ReactJS, Redux, Material UI, TailwindCSS} % TypeScript
+\cvitem{Back End}{Java core, JSP Servlet, Thymeleaf, Spring MCV, Spring Boot, JUnit automated testing, NodeJS (Express Framework)} % Spring MVC, spring boot
+\cvitem{Database}{\textsc{UML}, \textsc{SQL} (SQL Server), Hibernate Framework, Spring data JPA}
+\cvitem{Teamwork}{Microsoft Excel, Figma, Docker, Github, Scrum agile framework, waterfall methodologies}
+
+\section{Languages}
+
+\cvitemwithcomment{Vietnamese}{Mothertongue}{}
+\cvitemwithcomment{English}{FLuent}{Professional Working Proficiency}
+\cvitemwithcomment{Japanese}{Basic}{Basic words and phrases only}
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Learn Math}{Cycling}
+\cvlistdoubleitem{Learn Japanese}{Reading English fiction novels}
+% \cvlistitem{\LaTeX}
+
+\end{document}
+
