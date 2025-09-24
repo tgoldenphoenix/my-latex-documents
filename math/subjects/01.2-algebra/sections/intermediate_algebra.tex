@@ -656,15 +656,251 @@ For the problems below, use the pattern.
 If you have a ($-1$) in a square root symbol, the ($-1$) come out as an ($\iu$).
 
 \section{Solving Quadratic Equations by Completing the Square (Part I)}
+% 22/Sep/2025 phỏng vấn everrise về bị ghost, trời bão bị cảm lạnh
+% Do not feel very good today. I still trying to learn to improve my situation.
+
+\newpage
 
 \begin{multicols}{2}
 [
 %optional header
-  \textbf{Exercise}: Solve.
+  \textbf{Exercise}: Solve by Completing the Square.
 ]
 
 \begin{align*}
-  \text{Example I)}\ &-2x^{2}+3=-5\\
-  &x^{2}=4\\
+  \circled{1}\ x^{2}+8x+15&=0\\
+  x^{2}+8x&=-15\\
+  x^{2}+8x+16&=-15+16\ \text{ (*)}\\
+  (x+4)(x+4)&=1\\
+  (x+4)^{2}&=1\\
+  \sqrt{(x+4)^{2}}&=\pm\sqrt{1}\\
+  x+4&=\pm 1\\
+  x=-3 \text{ or }x&=-5
+\end{align*}
+
+\begin{align*}
+  \circled{2}\ 0&=x^{2}-10x+21\\
+  -21&=x^{2}-10x\\
+  25-21&=x^{2}-10x+25\\
+  4&=(x-5)^{2}\\
+  \pm 2&=x-5\\
+  x=7 &\text{ or }x=3
+\end{align*}
+
+\begin{align*}
+  \circled{3}\ 2x^{2}+12x+16&=0\\
+  \frac{2x^{2}+12x+16}{2}&=\frac{0}{2}\\
+  x^{2}+6x+8&=0\\
+  x^{2}+6x+9&=-8+9\\
+  (x+3)^{2}&=1\\
+  x+3&=\pm 1\\
+  x=-2 &\text{ or }x=-4
+\end{align*}
+
+\begin{align*}
+  \circled{4}\ 0&=-3x^{2}+30x-48\\
+  \frac{0}{-3}&=\frac{-3x^{2}+30x-48}{-3}\\
+  0&=x^{2}-10x+16\\
+  25-16&=x^{2}-10x+25\\
+  9&=(x-5)^{2}\\
+  \pm 3&=x-5\\
+  x=8 &\text{ or }x=2
+\end{align*}
+\end{multicols}
+
+You will not use the method of \textbf{completing the square} in the real world. You will either factor or use the quadratic formula. But completing the square is used to derive the quadratic formula.
+
+In problem \circled{1}, to find the number (16) to add to both side of the equation in step (*), you just do $\left(\frac{8}{2}\right)^{2}=16$ (take the (8) in $8x$, divide it by two and square it).
+
+\section{Solving Quadratic Equations by Completing the Square (Part II)}
+% 23/sep/2025 chắc là fail phỏng vấn, bị cty ghost, don't give up
+% Learn java DSA & practice writing SQL queries
+
+\newpage
+
+\begin{figure}[htb!]
+  \centering
+  \includegraphics[width=.9\textwidth]{int1001.png}
+  \caption{Completing the Square Algorithm}
+  % \label{fig:imaginary_pattern}
+\end{figure}
+
+\vspace{.3cm}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Solve by Completing the Square.
+]
+
+\begin{align*}
+  \circled{1}\ x^{2}+9x+18&=0\\
+  x^{2}+9x+\frac{81}{4}&=-18+\frac{81}{4}\\
+  \left( x+\frac{9}{2} \right)^{2}&=\frac{-72}{4}+\frac{81}{4}\left(=\frac{9}{4}\right)\\
+  \sqrt{\left( x+\frac{9}{2} \right)^{2}}&=\sqrt{\frac{9}{4}}\\
+  x+\frac{9}{2}&=\pm \frac{3}{2}\\
+  x=-3 &\text{ or }x=-6
+\end{align*}
+
+\begin{align*}
+  \circled{2}\ 0&=x^{2}-5x-50\\
+  \frac{25}{4}+50&=x^{2}-5x+\frac{25}{4}\\
+  \frac{225}{4}&=\left( x-\frac{5}{2} \right)^{2}\\
+  \pm \frac{15}{2}&=x-\frac{5}{2}\\
+  x=10 &\text{ or }x=-5
+\end{align*}
+
+\begin{align*}
+  \circled{6}\ x^{2}+4x+1&=0\\
+  x^{2}+4x+4&=-1+4\\
+  (x+2)^{2}&=3\\
+  x+2&=\pm\sqrt{3}\\
+  x&=\pm\sqrt{3}-2
+\end{align*}
+
+\begin{align*}
+  \circled{8}\ x^{2}+x-3&=0\\
+  x^{2}+x+\frac{1}{4}&=\frac{1}{4}+3\\
+  \left(x+\frac{1}{2}\right)^{2}&=\frac{13}{4}\\
+  x+\frac{1}{2}&=\pm \frac{\sqrt{13}}{2}\\
+  x&=\frac{\pm \sqrt{13}-1}{2}
+\end{align*}
+
+\begin{align*}
+  \circled{12}\ 2x^{2}+4x-3&=0\\
+  \frac{2x^{2}+4x-3}{2}&=\frac{0}{2}\\
+  x^{2}+2x-\frac{3}{2}&=0\\
+  x^{2}+2x+1&=1+\frac{3}{2}\\
+  (x+1)^{2}&=\frac{5}{2}\\
+  x+1&=\pm\frac{\sqrt{10}}{2}\\
+  x&=-1\pm \frac{\sqrt{10}}{2}
+\end{align*}
+
+\begin{align*}
+  \circled{13}\ 0&=4x^{2}-40x+5\\
+  \frac{0}{4}&=\frac{4x^{2}-40x+5}{4}\\
+  0&=x^{2}-10x+\frac{5}{4}\\
+  25-\frac{5}{4}&=x^{2}-10x+25\\
+  \frac{95}{4}&=(x-5)^{2}\\
+  \pm \frac{\sqrt{95}}{2}&=x-5\\
+  5\pm\frac{\sqrt{95}}{2}&=x
+\end{align*}
+
+\begin{align*}
+  \circled{14}\ 0&=-3x^{2}+18x+4\\
+  \frac{0}{3}&=\frac{-3x^{2}+18x+4}{3}\\
+  0&=x^{2}-6x-\frac{4}{3}\\
+  9+\frac{4}{3}&=x^{2}-6x+9\\
+  \frac{31}{3}&=(x-3)^{2}\\
+  \pm \frac{\sqrt{93}}{3}&=x-3\\
+  3\pm\frac{\sqrt{93}}{3}&=x
+\end{align*}
+
+\begin{align*}
+  \circled{18}\ 3x^{2}-21x+8&=0\\
+  \frac{3x^{2}-21x+8}{3}&=\frac{0}{3}\\
+  x^{2}-7x+\frac{8}{3}&=0\\
+  x^{2}-7x+\frac{49}{4}&=-\frac{8}{3}+\frac{49}{4}\\
+  \left(x-\frac{7}{2}\right)^{2}&=\frac{115}{12}\\
+  x-\frac{7}{2}&=\pm \frac{\sqrt{345}}{6}\\
+  x&=\pm \frac{\sqrt{345}}{6}+\frac{7}{2}
+\end{align*}
+
+\begin{align*}
+  \circled{19}\ 0&=7x^{2}+35x-10\\
+  \frac{0}{7}&=\frac{7x^{2}+35x-10}{7}\\
+  0&=x^{2}+5x-\frac{10}{7}\\
+  \frac{25}{4}+\frac{10}{7}&=x^{2}+5x+\frac{25}{4}\\
+  \frac{215}{28}&=\left(x+\frac{5}{2}\right)^{2}\\
+  \pm \frac{\sqrt{1505}}{14}&=x+\frac{5}{2}\ \text{ (*)}\\
+  \pm \frac{\sqrt{1505}}{14}-\frac{5}{2}&=x\\
+\end{align*}
+\end{multicols}
+
+Problem \circled{6} nghiệm có ($\sqrt{3}$) là số vô tỉ (irrational number) nên không thể factoring ra để giải tìm nghiệm được. Những problems trước đó mặc dù cũng completing the square nhưng ra nghiệm nguyên (whole numbers) tức là vẫn có thể factor ra để tìm nghiệm.
+
+Problem \circled{19}, ở bước (*) khi rationalizing the fraction with root in the denominator bấm máy tính không ra mà phải làm manual (coi lại cách làm  mấy bài trước).
+
+\section{Solving Quadratic Equations with the Quadratic Formula}
+% 24/sep/2025 đỡ bệnh, không còn chảy mũi liên tục. Ráng học chút.
+
+\newpage
+
+\centerline{\underline{\textbf{\large \hl{Quadratic Equations with Complex Solutions}}}}
+
+\vspace{.5cm}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Solve by Completing the Square.
+]
+
+\begin{align*}
+  \circled{1}\ -3x^{2}+7x-8&=0\\
+  \frac{-3x^{2}+7x-8}{-3}&=\frac{0}{-3}\\
+  x^{2}-\frac{7}{3}x+\frac{8}{3}&=0\\
+  x^{2}-\frac{7}{3}x+\left(\frac{7}{6}\right)^{2}&=-\frac{8}{3}+\frac{49}{36}\\
+  \left( x-\frac{7}{6} \right)^{2}&=\frac{-47}{36}\\
+  x-\frac{7}{6}&=\pm \frac{\sqrt{-47}}{\sqrt{36}}\\
+  x-\frac{7}{6}&=\pm \frac{i\sqrt{47}}{6}\\
+  x&=\frac{7\pm i\sqrt{47}}{6}\\
+\end{align*}
+
+\begin{align*}
+  \circled{2}\ 0&=5x^{2}-4x+2\\
+  \frac{0}{5}&=\frac{5x^{2}-4x+2}{5}\\
+  0&=x^{2}-\frac{4}{5}x+\frac{2}{5}\\
+  \frac{16}{100}-\frac{2}{5}&=x^{2}-\frac{4}{5}x+\left(\frac{4}{10}\right)^{2}\\
+  -\frac{6}{25}&=\left(x-\frac{2}{5}\right)^{2}\\
+  \pm \frac{i\sqrt{6}}{5}&=x-\frac{2}{5}\\
+  \frac{2\pm i\sqrt{6}}{5}&=x
+\end{align*}
+
+\begin{align*}
+  \circled{6}\ 0&=8x^{2}+4x+3\\
+  \frac{0}{8}&=\frac{8x^{2}+4x+3}{8}\\
+  0&=x^{2}+\frac{1}{2}x+\frac{3}{8}\\
+  \frac{1}{16}-\frac{3}{8}&=x^{2}+\frac{1}{2}x+\frac{1}{16}\\
+  -\frac{5}{16}&=\left(x+\frac{1}{4}\right)^{2}\\
+  \pm \frac{i\sqrt{5}}{4}&=x+\frac{1}{4}\\
+  \frac{-1\pm i\sqrt{5}}{4}&=x
+\end{align*}
+\end{multicols}
+
+Problem \circled{1} has two complex solutions (nghiệm số phức).
+
+% \vspace{.7cm}
+\newpage
+
+\centerline{\underline{\textbf{\large \hl{The Quadratic Formula}}}}
+
+\vspace{.4cm}
+
+Let's find a formula that we can use to solve \underline{any} quadratic equation. We will start with generic quadratic equation ($ax^{2}+bx+c=0$) and then solve by completing the square.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  \[x=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}\]
+\end{tcolorbox}
+
+\vspace{.5cm}
+
+\begin{multicols}{2}
+[
+%optional header
+  \textbf{Exercise}: Solve using the quadratic formula.
+]
+
+\begin{align*}
+  \circled{7}\ &3x^{2}+5x+1=0\\
+  &x=\frac{-5\pm\sqrt{5^{2}-4(3)(1)}}{2(3)}\\
+  &x=\frac{-5\pm\sqrt{13}}{6}
+\end{align*}
+
+\begin{align*}
+  \circled{8}\ &0=-7x^{2}+3x+2\\
+  &x=\frac{-3\pm\sqrt{3^{2}-4(-7)(2)}}{2(-7)}\\
+  &x=\frac{-3\pm\sqrt{65}}{-14}\\
+  &x=\frac{3\pm\sqrt{65}}{14}
 \end{align*}
 \end{multicols}
