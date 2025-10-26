@@ -6,3 +6,8 @@
 
 \newcommand{\varthreestars}{\begin{center}\begin{tabular}{c}$\ast$\\[-0.8ex] $\ast\enspace \ast $\end{tabular}\end{center}}
 
+  % https://tex.stackexchange.com/questions/7032/good-way-to-make-textcircled-numbers
+\newcommand*\circled[1]{
+  \tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}
+}
+
